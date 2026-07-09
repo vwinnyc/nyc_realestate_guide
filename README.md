@@ -1,1 +1,1 @@
-# nyc_coop_guide
+# NYC Co-op Guide
