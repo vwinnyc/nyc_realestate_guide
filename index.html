@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NYC Co-op Buyer Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --parchment: #F5EFE4; --parchment-dark: #EDE4D4; --cream: #FDFAF5;
+    --slate: #1A2B3C; --slate-mid: #2E4560; --slate-light: #4A6580;
+    --gold: #B8953F; --gold-light: #D4AD57; --sage: #7A9E7E;
+    --alert: #C0392B; --amber: #E07C2A;
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--parchment); color: var(--slate); line-height: 1.6; }
+
+  nav {
+    background: var(--slate); padding: 0 32px; height: 60px;
+    display: flex; align-items: center; justify-content: space-between;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .nav-brand { font-family: 'Playfair Display', serif; color: var(--parchment); font-size: 17px; font-weight: 600; }
+  .nav-cta { padding: 8px 20px; border-radius: 7px; background: var(--gold); color: #fff; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; border: none; cursor: pointer; }
+
+  .hero { background: var(--slate); padding: 64px 32px 56px; text-align: center; }
+  .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+  .hero .eyebrow { color: var(--gold-light); }
+  h1 { font-family: 'Playfair Display', serif; font-size: clamp(34px, 6vw, 58px); color: var(--parchment); font-weight: 700; margin-bottom: 20px; line-height: 1.1; }
+  h1 em { color: var(--gold-light); font-style: italic; }
+  .hero-sub { font-size: 16px; color: #8A9BB5; font-weight: 300; max-width: 560px; margin: 0 auto 36px; line-height: 1.7; }
+  .hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary { display: inline-block; padding: 13px 32px; border-radius: 9px; background: var(--gold); color: #fff; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; border: none; cursor: pointer; text-decoration: none; }
+  .btn-ghost { display: inline-block; padding: 13px 32px; border-radius: 9px; background: transparent; color: var(--parchment); font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; border: 1.5px solid #4A6580; cursor: pointer; text-decoration: none; }
+
+  .stat-bar { background: var(--cream); border-top: 1px solid var(--parchment-dark); border-bottom: 1px solid var(--parchment-dark); padding: 36px 24px; display: flex; justify-content: center; flex-wrap: wrap; gap: 32px 48px; }
+  .stat { text-align: center; padding: 0 16px; }
+  .stat-number { font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; line-height: 1; }
+  .stat-label { font-size: 13px; color: var(--slate-light); margin-top: 6px; }
+
+  .section { max-width: 820px; margin: 0 auto; padding: 56px 24px; }
+  .section-tight { max-width: 820px; margin: 0 auto; padding: 40px 24px; }
+  h2 { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 700; color: var(--slate); margin-bottom: 8px; }
+  .h2-sub { font-size: 15px; color: var(--slate-light); font-weight: 300; margin-bottom: 32px; line-height: 1.6; }
+  .divider { height: 1px; background: var(--parchment-dark); margin: 0 24px; }
+
+  .compare-grid { display: flex; gap: 16px; flex-wrap: wrap; }
+  .compare-card { flex: 1; min-width: 240px; background: var(--cream); border-radius: 12px; padding: 24px 28px; border: 1px solid var(--parchment-dark); }
+  .compare-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--slate); margin-bottom: 16px; }
+  .compare-item { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px; }
+  .compare-dash { color: var(--gold); font-size: 14px; margin-top: 2px; flex-shrink: 0; }
+  .compare-text { font-size: 14px; color: var(--slate-light); line-height: 1.5; }
+
+  .progress-wrap { background: var(--cream); border-radius: 12px; padding: 20px 24px; border: 1px solid var(--parchment-dark); margin-bottom: 20px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .progress-pct { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: var(--slate); min-width: 52px; }
+  .progress-track { flex: 1; height: 8px; border-radius: 4px; background: var(--parchment-dark); min-width: 100px; }
+  .progress-fill { height: 100%; border-radius: 4px; background: var(--gold); transition: width 0.4s ease; width: 0%; }
+  .progress-label { font-size: 13px; color: var(--slate-light); }
+  .expand-all { margin-left: auto; font-size: 12px; color: var(--gold); background: none; border: none; cursor: pointer; font-family: 'Inter', sans-serif; font-weight: 500; }
+
+  .cat-block { margin-bottom: 10px; }
+  .cat-header { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; cursor: pointer; border-radius: 12px; background: var(--cream); border: 1px solid var(--parchment-dark); user-select: none; }
+  .cat-header.open { border-radius: 12px 12px 0 0; }
+  .cat-header-left { display: flex; align-items: center; gap: 12px; }
+  .cat-icon { font-size: 18px; }
+  .cat-title { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 600; color: var(--slate); }
+  .cat-count { font-size: 12px; color: var(--slate-light); margin-left: 8px; }
+  .cat-toggle { font-size: 20px; color: var(--gold); transition: transform 0.25s; display: inline-block; }
+  .cat-toggle.open { transform: rotate(45deg); }
+  .cat-body { background: var(--cream); border: 1px solid var(--parchment-dark); border-top: none; border-radius: 0 0 12px 12px; padding: 4px 16px 16px; display: none; }
+  .cat-body.open { display: block; }
+  .cat-tip { font-size: 12px; color: var(--sage); font-style: italic; padding: 8px 12px; background: rgba(122,158,126,0.1); border-left: 3px solid var(--sage); border-radius: 0 6px 6px 0; margin: 10px 4px 8px; line-height: 1.6; }
+  .check-row { display: flex; align-items: flex-start; gap: 12px; padding: 10px 4px; border-bottom: 1px solid var(--parchment-dark); cursor: pointer; transition: opacity 0.2s; }
+  .check-row:last-child { border-bottom: none; }
+  .check-row.done { opacity: 0.5; }
+  .check-box { width: 20px; height: 20px; border-radius: 5px; flex-shrink: 0; margin-top: 2px; border: 2px solid var(--parchment-dark); background: transparent; display: flex; align-items: center; justify-content: center; transition: all 0.15s; font-size: 11px; font-weight: 700; color: #fff; }
+  .check-box.done { border-color: var(--gold); background: var(--gold); }
+  .check-label { flex: 1; font-size: 14px; color: var(--slate); line-height: 1.5; }
+  .check-row.done .check-label { text-decoration: line-through; }
+  .check-who { font-size: 11px; color: var(--slate-light); flex-shrink: 0; margin-top: 3px; }
+  .complete-banner { margin-top: 20px; padding: 20px 24px; border-radius: 12px; background: rgba(122,158,126,0.15); border: 1.5px solid var(--sage); text-align: center; display: none; }
+  .complete-banner h3 { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--sage); margin-bottom: 6px; }
+  .complete-banner p { font-size: 14px; color: var(--slate-light); }
+
+  .calc-wrap { background: var(--cream); border-radius: 14px; padding: 28px; border: 1px solid var(--parchment-dark); }
+  .date-label { display: block; font-size: 13px; font-weight: 500; color: var(--slate-light); margin-bottom: 8px; }
+  .date-input { padding: 10px 16px; border-radius: 8px; border: 1.5px solid var(--parchment-dark); font-family: 'Inter', sans-serif; font-size: 14px; color: var(--slate); background: var(--cream); outline: none; cursor: pointer; margin-bottom: 20px; }
+  .deadline-cards { display: flex; gap: 16px; flex-wrap: wrap; }
+  .deadline-card { flex: 1; min-width: 200px; background: var(--parchment); border-radius: 14px; padding: 20px 24px; text-align: center; border: 2px solid var(--parchment-dark); transition: border-color 0.3s; }
+  .deadline-card-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--slate-light); margin-bottom: 10px; }
+  .deadline-number { font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 700; line-height: 1; color: var(--parchment-dark); }
+  .deadline-unit { font-size: 12px; color: var(--slate-light); margin-top: 4px; margin-bottom: 12px; }
+  .deadline-divider { height: 1px; background: var(--parchment-dark); margin-bottom: 12px; }
+  .deadline-date { font-size: 13px; color: var(--slate); font-weight: 500; }
+  .deadline-desc { font-size: 12px; color: var(--slate-light); margin-top: 4px; line-height: 1.5; }
+  .calc-note { margin-top: 16px; padding: 12px 16px; border-radius: 10px; background: rgba(26,43,60,0.06); font-size: 13px; color: var(--slate-light); line-height: 1.7; display: none; }
+  .calc-note strong { color: var(--slate); }
+
+  .faq-wrap { background: var(--cream); border-radius: 14px; padding: 8px 28px; border: 1px solid var(--parchment-dark); }
+  .faq-item { border-bottom: 1px solid var(--parchment-dark); }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-q { width: 100%; text-align: left; background: none; border: none; padding: 18px 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  .faq-q-text { font-family: 'Playfair Display', serif; font-size: 16px; color: var(--slate); font-weight: 600; line-height: 1.4; text-align: left; }
+  .faq-icon { font-size: 20px; color: var(--gold); flex-shrink: 0; transition: transform 0.25s; display: inline-block; }
+  .faq-icon.open { transform: rotate(45deg); }
+  .faq-a { padding-bottom: 18px; font-size: 14px; color: var(--slate-light); line-height: 1.8; display: none; }
+  .faq-a.open { display: block; }
+
+  .cta-box { background: var(--slate); border-radius: 16px; padding: 48px 40px; text-align: center; }
+  .cta-box .eyebrow { color: var(--gold-light); }
+  .cta-box h2 { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--parchment); font-weight: 700; margin-bottom: 16px; line-height: 1.2; }
+  .cta-box p { font-size: 15px; color: #8A9BB5; max-width: 480px; margin: 0 auto 32px; line-height: 1.7; }
+  .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+  footer { background: var(--slate); padding: 24px 32px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; border-top: 1px solid #2E4560; }
+  .footer-brand { font-family: 'Playfair Display', serif; color: var(--parchment-dark); font-size: 15px; }
+  .footer-legal { font-size: 11px; color: #4A6580; max-width: 520px; line-height: 1.5; }
+
+  @media (max-width: 600px) {
+    nav { padding: 0 16px; }
+    .hero { padding: 48px 20px 40px; }
+    .section, .section-tight { padding: 40px 16px; }
+    .cta-box { padding: 36px 24px; }
+    footer { padding: 20px 16px; }
+    .faq-wrap, .calc-wrap { padding: 8px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-brand">NYC Co-op Guide</span>
+  <button class="nav-cta" onclick="scrollToEl('cta')">Work With an Agent</button>
+</nav>
+
+<div class="hero">
+  <div class="eyebrow">New York City &middot; Co-op Buyers &amp; Investors</div>
+  <h1>Board approval<br /><em>shouldn't be a mystery.</em></h1>
+  <p class="hero-sub">NYC co-op boards reject applications for a single missing document. This guide walks you through every requirement — with a live checklist, deadline calculator, and expert context — so you arrive fully prepared.</p>
+  <div class="hero-btns">
+    <button class="btn-primary" onclick="scrollToEl('checklist')">Start Your Checklist</button>
+    <button class="btn-ghost" onclick="scrollToEl('deadlines')">Calculate Deadlines</button>
+  </div>
+</div>
+
+<div class="stat-bar">
+  <div class="stat"><div class="stat-number" style="color:var(--slate)" data-count="20" data-suffix="+">0</div><div class="stat-label">documents in a typical package</div></div>
+  <div class="stat"><div class="stat-number" style="color:var(--gold)" data-count="45" data-suffix=" days">0</div><div class="stat-label">max board decision window (2026 law)</div></div>
+  <div class="stat"><div class="stat-number" style="color:var(--sage)" data-count="15" data-suffix="%">0</div><div class="stat-label">typical co-op discount vs. comparable condo</div></div>
+  <div class="stat"><div class="stat-number" style="color:var(--slate-light)" data-count="6" data-suffix="–24 mo">0</div><div class="stat-label">reserves most boards require post-closing</div></div>
+</div>
+
+<div class="section">
+  <div class="eyebrow">Before You Buy</div>
+  <h2>Co-op vs. condo — what actually matters</h2>
+  <p class="h2-sub">Two very different ownership structures. One very different approval process.</p>
+  <div class="compare-grid">
+    <div class="compare-card">
+      <div class="compare-title">Co-op</div>
+      <div class="compare-item"><span class="compare-dash">—</span><span class="compare-text">Own shares in a corporation</span></div>
+      <div class="compare-item"><span class="compare-dash">—</span><span class="compare-text">Proprietary lease for your unit</span></div>
+      <div class="compare-item"><span class="compare-dash">—</span><span class="compare-text">Board approval required to buy</span></div>
+      <div class="compare-item"><span class="compare-dash">—</span><span class="compare-text">Lower price point (10–20% discount)</span></div>
+      <div class="compare-item"><span class="compare-dash">—</span><span class="compare-text">Higher monthly maintenance</span></div>
+      <div class="compare-item"><span class="compare-dash">—</span><span class="compare-text">Sublet restrictions common</span></div>
+      <div class="compare-item"><span class="compare-dash">—</span><span class="compare-text">Stricter financing rules</span></div>
+    </div>
+    <div class="compare-card">
+      <div class="compare-title">Condo</div>
+      <div class="compare-item"><span class="compare-dash">—</span><span class="compare-text">Own real property outright</span></div>
+      <div class="compare-item"><span class="compare-dash">—</span><span class="compare-text">No board approval to buy</span></div>
+      <div class="compare-item"><span class="compare-dash">—</span><span class="compare-text">Higher purchase price</span></div>
+      <div class="compare-item"><span class="compare-dash">—</span><span class="compare-text">Lower monthly common charges</span></div>
+      <div class="compare-item"><span class="compare-dash">—</span><span class="compare-text">Easier to rent out</span></div>
+      <div class="compare-item"><span class="compare-dash">—</span><span class="compare-text">Easier to finance and sell</span></div>
+      <div class="compare-item"><span class="compare-dash">—</span><span class="compare-text">Right of first refusal only</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="section" id="checklist">
+  <div class="eyebrow">Interactive Checklist</div>
+  <h2>Your board package, item by item</h2>
+  <p class="h2-sub">Check off documents as you gather them. Every building has its own exact list — use this as your master reference and confirm specifics with your managing agent.</p>
+
+  <div class="progress-wrap">
+    <div class="progress-pct" id="pct-display">0%</div>
+    <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+    <div class="progress-label" id="progress-label">0 of 20 items collected</div>
+    <button class="expand-all" onclick="expandAll()">Expand all</button>
+  </div>
+
+  <div class="cat-block">
+    <div class="cat-header open" onclick="toggleCat(this)">
+      <div class="cat-header-left"><span class="cat-icon">📋</span><div><span class="cat-title">Application</span><span class="cat-count" id="count-0">0/4</span></div></div>
+      <span class="cat-toggle open">+</span>
+    </div>
+    <div class="cat-body open">
+      <div class="cat-tip">Ask your managing agent for the building's own forms — never use generic templates.</div>
+      <div class="check-row" onclick="toggleCheck(this,1,0,4)"><div class="check-box"></div><span class="check-label">Completed co-op application form (signed &amp; dated)</span><span class="check-who">You</span></div>
+      <div class="check-row" onclick="toggleCheck(this,2,0,4)"><div class="check-box"></div><span class="check-label">Cover letter introducing yourself and your interest in the building</span><span class="check-who">You + Agent</span></div>
+      <div class="check-row" onclick="toggleCheck(this,3,0,4)"><div class="check-box"></div><span class="check-label">Fully executed contract of sale</span><span class="check-who">Attorney</span></div>
+      <div class="check-row" onclick="toggleCheck(this,4,0,4)"><div class="check-box"></div><span class="check-label">Board application fee (typically $500–$2,000+)</span><span class="check-who">You</span></div>
+    </div>
+  </div>
+
+  <div class="cat-block">
+    <div class="cat-header" onclick="toggleCat(this)">
+      <div class="cat-header-left"><span class="cat-icon">💼</span><div><span class="cat-title">Financial Documents</span><span class="cat-count" id="count-1">0/7</span></div></div>
+      <span class="cat-toggle">+</span>
+    </div>
+    <div class="cat-body">
+      <div class="cat-tip">Boards focus on post-closing liquidity — most want 6–24 months of reserves after your down payment.</div>
+      <div class="check-row" onclick="toggleCheck(this,5,1,7)"><div class="check-box"></div><span class="check-label">REBNY financial statement (assets, liabilities, income)</span><span class="check-who">You</span></div>
+      <div class="check-row" onclick="toggleCheck(this,6,1,7)"><div class="check-box"></div><span class="check-label">Federal tax returns — last 2 years</span><span class="check-who">You</span></div>
+      <div class="check-row" onclick="toggleCheck(this,7,1,7)"><div class="check-box"></div><span class="check-label">Two most recent pay stubs</span><span class="check-who">You</span></div>
+      <div class="check-row" onclick="toggleCheck(this,8,1,7)"><div class="check-box"></div><span class="check-label">Employer letter on company letterhead</span><span class="check-who">You</span></div>
+      <div class="check-row" onclick="toggleCheck(this,9,1,7)"><div class="check-box"></div><span class="check-label">Bank statements — 3 to 6 months</span><span class="check-who">You</span></div>
+      <div class="check-row" onclick="toggleCheck(this,10,1,7)"><div class="check-box"></div><span class="check-label">Brokerage and investment account statements</span><span class="check-who">You</span></div>
+      <div class="check-row" onclick="toggleCheck(this,11,1,7)"><div class="check-box"></div><span class="check-label">Post-closing liquidity documentation</span><span class="check-who">You</span></div>
+    </div>
+  </div>
+
+  <div class="cat-block">
+    <div class="cat-header" onclick="toggleCat(this)">
+      <div class="cat-header-left"><span class="cat-icon">🪪</span><div><span class="cat-title">Identity &amp; Authorization</span><span class="cat-count" id="count-2">0/3</span></div></div>
+      <span class="cat-toggle">+</span>
+    </div>
+    <div class="cat-body">
+      <div class="cat-tip">Background check authorization must be signed before submission — don't wait until you're asked.</div>
+      <div class="check-row" onclick="toggleCheck(this,12,2,3)"><div class="check-box"></div><span class="check-label">Government-issued photo ID</span><span class="check-who">You</span></div>
+      <div class="check-row" onclick="toggleCheck(this,13,2,3)"><div class="check-box"></div><span class="check-label">Social Security card or ITIN</span><span class="check-who">You</span></div>
+      <div class="check-row" onclick="toggleCheck(this,14,2,3)"><div class="check-box"></div><span class="check-label">Signed credit and background check authorization</span><span class="check-who">You</span></div>
+    </div>
+  </div>
+
+  <div class="cat-block">
+    <div class="cat-header" onclick="toggleCat(this)">
+      <div class="cat-header-left"><span class="cat-icon">🏦</span><div><span class="cat-title">Financing</span><span class="cat-count" id="count-3">0/2</span></div></div>
+      <span class="cat-toggle">+</span>
+    </div>
+    <div class="cat-body">
+      <div class="cat-tip">The Aztech agreement protects your lender's interest in the co-op shares — your bank will require it.</div>
+      <div class="check-row" onclick="toggleCheck(this,15,3,2)"><div class="check-box"></div><span class="check-label">Lender commitment letter</span><span class="check-who">Lender</span></div>
+      <div class="check-row" onclick="toggleCheck(this,16,3,2)"><div class="check-box"></div><span class="check-label">Aztech / recognition agreement</span><span class="check-who">Lender</span></div>
+    </div>
+  </div>
+
+  <div class="cat-block">
+    <div class="cat-header" onclick="toggleCat(this)">
+      <div class="cat-header-left"><span class="cat-icon">✉️</span><div><span class="cat-title">References</span><span class="cat-count" id="count-4">0/2</span></div></div>
+      <span class="cat-toggle">+</span>
+    </div>
+    <div class="cat-body">
+      <div class="cat-tip">Personal letters carry more weight than form letters. Ask people who can speak to your character as a neighbor.</div>
+      <div class="check-row" onclick="toggleCheck(this,17,4,2)"><div class="check-box"></div><span class="check-label">Personal reference letters (2–3)</span><span class="check-who">You</span></div>
+      <div class="check-row" onclick="toggleCheck(this,18,4,2)"><div class="check-box"></div><span class="check-label">Professional reference letters (1–2)</span><span class="check-who">You</span></div>
+    </div>
+  </div>
+
+  <div class="cat-block">
+    <div class="cat-header" onclick="toggleCat(this)">
+      <div class="cat-header-left"><span class="cat-icon">⚖️</span><div><span class="cat-title">Legal Review</span><span class="cat-count" id="count-5">0/2</span></div></div>
+      <span class="cat-toggle">+</span>
+    </div>
+    <div class="cat-body">
+      <div class="cat-tip">Your attorney should review the proprietary lease for sublet restrictions, pet policies, and renovation rules before you bid.</div>
+      <div class="check-row" onclick="toggleCheck(this,19,5,2)"><div class="check-box"></div><span class="check-label">Building-specific supplemental forms</span><span class="check-who">Agent</span></div>
+      <div class="check-row" onclick="toggleCheck(this,20,5,2)"><div class="check-box"></div><span class="check-label">Offering plan and proprietary lease review</span><span class="check-who">Attorney</span></div>
+    </div>
+  </div>
+
+  <div class="complete-banner" id="complete-banner">
+    <h3>Package complete.</h3>
+    <p>Ready to submit. An experienced agent can review your package before it goes to the managing agent.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="section" id="deadlines">
+  <div class="eyebrow">New July 2026 Law</div>
+  <h2>Know your statutory deadlines</h2>
+  <p class="h2-sub">Under NYC Intro. 1120-B, boards now face legally enforceable timelines. Enter your submission date to see exactly when they're required to respond.</p>
+  <div class="calc-wrap">
+    <label class="date-label" for="submit-date">Package submission date</label>
+    <input type="date" id="submit-date" class="date-input" oninput="calcDeadlines()" />
+    <div class="deadline-cards">
+      <div class="deadline-card" id="card-ack">
+        <div class="deadline-card-label">Board Acknowledgment</div>
+        <div class="deadline-number" id="ack-number">—</div>
+        <div class="deadline-unit" id="ack-unit">enter date above</div>
+        <div class="deadline-divider"></div>
+        <div class="deadline-date" id="ack-date">—</div>
+        <div class="deadline-desc">Board must confirm receipt or application is auto-approved</div>
+      </div>
+      <div class="deadline-card" id="card-decision">
+        <div class="deadline-card-label">Board Decision</div>
+        <div class="deadline-number" id="dec-number">—</div>
+        <div class="deadline-unit" id="dec-unit">enter date above</div>
+        <div class="deadline-divider"></div>
+        <div class="deadline-date" id="dec-date">—</div>
+        <div class="deadline-desc">Final approve / deny required under NYC law (July 2026)</div>
+      </div>
+    </div>
+    <div class="calc-note" id="calc-note">
+      <strong>New law note:</strong> Under NYC Intro. 1120-B (eff. July 28, 2026), if the board misses the 15-day acknowledgment window, your application is automatically deemed complete — starting the 45-day decision clock immediately. One 14-day extension is permitted.
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="section" id="faq">
+  <div class="eyebrow">Common Questions</div>
+  <h2>What buyers and investors ask most</h2>
+  <p class="h2-sub">Straight answers to the questions that come up in every buyer consultation.</p>
+  <div class="faq-wrap">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">How long does the co-op board process take?</span><span class="faq-icon">+</span></button>
+      <div class="faq-a">From contract signing to board decision, expect 4–8 weeks. Assembling your package takes 2–4 weeks; board review another 2–4. Under a new NYC law effective July 28, 2026, boards must acknowledge your application within 15 days and issue a decision within 45 days — or face civil penalties.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What financials do boards care most about?</span><span class="faq-icon">+</span></button>
+      <div class="faq-a">Three things: your debt-to-income ratio (most boards want combined housing costs under 28–33% of gross income), post-closing liquidity (typically 6–24 months of maintenance and mortgage in reserves), and down payment (most Manhattan co-ops require 20–25%; stricter prewar buildings sometimes demand 50% or all-cash).</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Can a board reject me without explanation?</span><span class="faq-icon">+</span></button>
+      <div class="faq-a">Yes — co-op boards can reject applicants without stating a reason, as long as they don't violate anti-discrimination laws. This is one of the key differences between a co-op and a condo purchase. An experienced agent can help you read a building's approval culture before you make an offer.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What changed under the new July 2026 NYC law?</span><span class="faq-icon">+</span></button>
+      <div class="faq-a">NYC Intro. 1120-B requires boards of co-ops with 10+ units to acknowledge applications within 15 days and issue a final decision within 45 days. If they miss the 15-day window, your application is automatically deemed complete. One 14-day extension is permitted. Violations carry penalties starting at $1,000 per incident.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Is a co-op a good investment?</span><span class="faq-icon">+</span></button>
+      <div class="faq-a">Co-ops historically trade at a 10–20% discount to comparable condos due to the board approval process and financing restrictions. For buyers who can clear the financial bar, that discount represents real value — especially in buildings with low underlying mortgages and strong reserve funds. Investors should confirm sublet policies before purchasing, as many co-ops restrict rentals.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What's the difference between a co-op and a condo?</span><span class="faq-icon">+</span></button>
+      <div class="faq-a">When you buy a condo, you own real property. When you buy a co-op, you own shares in a corporation that owns the building, and you hold a proprietary lease for your unit. Co-ops have stricter board control, lower price points, and higher monthly maintenance (which includes a share of the building's mortgage and real estate taxes). Condos are easier to finance, sublet, and sell.</div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="section-tight" id="cta">
+  <div class="cta-box">
+    <div class="eyebrow">Ready to Move Forward?</div>
+    <h2>A board package done right<br />closes faster.</h2>
+    <p>I work with buyers and investors across Manhattan and the Gramercy corridor. Let's talk about your timeline, building criteria, and what boards in your target neighborhoods actually want to see.</p>
+    <div class="cta-btns">
+      <a href="#" class="btn-primary">Schedule a Consultation</a>
+      <a href="#" class="btn-ghost">Download Checklist PDF</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span class="footer-brand">NYC Co-op Guide</span>
+  <span class="footer-legal">Information is educational, not legal advice. Consult your attorney before submitting a board package. &middot; NYC Intro. 1120-B eff. July 28, 2026</span>
+</footer>
+
+<script>
+  function scrollToEl(id) { document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+
+  // Stat counters
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target, target = parseInt(el.dataset.count), suffix = el.dataset.suffix || '', start = performance.now();
+      const tick = now => { const p = Math.min((now - start) / 1000, 1); el.textContent = Math.round(p * target) + suffix; if (p < 1) requestAnimationFrame(tick); };
+      requestAnimationFrame(tick); io.unobserve(el);
+    });
+  }, { threshold: 0.4 });
+  document.querySelectorAll('[data-count]').forEach(el => io.observe(el));
+
+  // Checklist
+  const checked = new Set();
+  const catCounts = [0, 0, 0, 0, 0, 0];
+  const catTotals = [4, 7, 3, 2, 2, 2];
+  const TOTAL = 20;
+
+  function toggleCheck(row, id, catIdx, catTotal) {
+    const box = row.querySelector('.check-box');
+    if (checked.has(id)) {
+      checked.delete(id); row.classList.remove('done'); box.classList.remove('done'); box.textContent = '';
+      catCounts[catIdx]--;
+    } else {
+      checked.add(id); row.classList.add('done'); box.classList.add('done'); box.textContent = '✓';
+      catCounts[catIdx]++;
+    }
+    document.getElementById('count-' + catIdx).textContent = catCounts[catIdx] + '/' + catTotals[catIdx];
+    const done = checked.size, pct = Math.round((done / TOTAL) * 100);
+    document.getElementById('pct-display').textContent = pct + '%';
+    document.getElementById('pct-display').style.color = pct === 100 ? 'var(--sage)' : 'var(--slate)';
+    document.getElementById('progress-fill').style.width = pct + '%';
+    document.getElementById('progress-fill').style.background = pct === 100 ? 'var(--sage)' : 'var(--gold)';
+    document.getElementById('progress-label').textContent = done + ' of ' + TOTAL + ' items collected';
+    document.getElementById('complete-banner').style.display = pct === 100 ? 'block' : 'none';
+  }
+
+  function toggleCat(header) {
+    const body = header.nextElementSibling, toggle = header.querySelector('.cat-toggle'), open = body.classList.contains('open');
+    body.classList.toggle('open', !open); header.classList.toggle('open', !open); toggle.classList.toggle('open', !open);
+  }
+
+  function expandAll() {
+    document.querySelectorAll('.cat-body').forEach(b => b.classList.add('open'));
+    document.querySelectorAll('.cat-header').forEach(h => h.classList.add('open'));
+    document.querySelectorAll('.cat-toggle').forEach(t => t.classList.add('open'));
+  }
+
+  // Deadline calc
+  function calcDeadlines() {
+    const val = document.getElementById('submit-date').value;
+    if (!val) return;
+    const submitted = new Date(val), today = new Date();
+    today.setHours(0,0,0,0);
+
+    function process(days, numId, unitId, dateId, cardId) {
+      const dl = new Date(submitted); dl.setDate(dl.getDate() + days);
+      const rem = Math.floor((dl - today) / 86400000);
+      const fmt = dl.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+      document.getElementById(dateId).textContent = fmt;
+      const numEl = document.getElementById(numId), unitEl = document.getElementById(unitId), card = document.getElementById(cardId);
+      let color;
+      if (rem < 0) { numEl.textContent = 'Past'; unitEl.textContent = 'deadline'; color = 'var(--alert)'; }
+      else if (rem <= 5) { numEl.textContent = rem; unitEl.textContent = 'days remaining'; color = 'var(--alert)'; }
+      else if (rem <= 14) { numEl.textContent = rem; unitEl.textContent = 'days remaining'; color = 'var(--amber)'; }
+      else { numEl.textContent = rem; unitEl.textContent = 'days remaining'; color = 'var(--sage)'; }
+      numEl.style.color = color; card.style.borderColor = color;
+    }
+
+    process(15, 'ack-number', 'ack-unit', 'ack-date', 'card-ack');
+    process(45, 'dec-number', 'dec-unit', 'dec-date', 'card-decision');
+    document.getElementById('calc-note').style.display = 'block';
+  }
+
+  // FAQ
+  function toggleFaq(btn) {
+    const a = btn.nextElementSibling, icon = btn.querySelector('.faq-icon'), open = a.classList.contains('open');
+    a.classList.toggle('open', !open); icon.classList.toggle('open', !open);
+  }
+</script>
+</body>
+</html>
