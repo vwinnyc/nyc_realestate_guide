@@ -13,7 +13,14 @@
 "A popular legend says it was named because the Upper West Side felt as remote as the Dakota Territory. Historians doubt the story.",
 "John Lennon lived here, and the exterior stood in for the Bramford in Rosemary's Baby (1968)."
 ],
-"src": "https://en.wikipedia.org/wiki/The_Dakota"
+"src": "https://en.wikipedia.org/wiki/The_Dakota",
+"checked": "2026-09-29",
+"news": [
+{
+"text": "On September 23, 2026, construction workers used a crane to reach and repair one of The Dakota’s turrets, while crews cordoned off part of the West 72nd Street and Central Park West corner.",
+"source_url": "https://www.westsiderag.com/2026/09/23/man-in-the-sky-works-on-the-dakota-building"
+}
+]
 },
 {
 "bbl": 1008510001,
@@ -27,7 +34,14 @@
 "New Yorkers nicknamed it the Flatiron for its triangular shape, and the name stuck.",
 "The gusts that whip around its narrow prow are part of the folklore behind the phrase \"23 skidoo.\""
 ],
-"src": "https://en.wikipedia.org/wiki/Flatiron_Building"
+"src": "https://en.wikipedia.org/wiki/Flatiron_Building",
+"checked": "2026-09-29",
+"news": [
+{
+"text": "In August, The Guardian reported that the Flatiron Building was due to open as a residential building later that fall, with a double-height lobby, pool and a games room featuring a billiards table.",
+"source_url": "https://www.theguardian.com/us-news/2026/aug/01/new-york-city-flatiron-building-apartments"
+}
+]
 },
 {
 "bbl": 1007720064,
@@ -1287,5 +1301,76 @@
 "The main building opened in 1900, after a fire destroyed the first one."
 ],
 "src": "https://en.wikipedia.org/wiki/Ellis_Island"
+},
+{
+"bbl": 1022410035,
+"name": "Hessian Military Hut",
+"tags": [
+"history",
+"lore",
+"residents"
+],
+"year": 1785,
+"facts": [
+"In 1915, amateur archaeologist Reginald Pelham Bolton dismantled a hut from the Revolutionary War encampment and rebuilt its foundation here.",
+"Prince Frederick II sold Hessian soldiers’ services to Britain without their consent; Northern Manhattan’s huts held up to eight men each.",
+"Bolton excavated a Revolutionary-era encampment of more than 60 huts; developers demolished the others to make way for apartment houses."
+],
+"sources": [
+"https://www.nycgovparks.org/parks/dyckman-house-museum/highlights/9753",
+"https://www.nycgovparks.org/parks/dyckman-house-museum/highlights/9753",
+"https://www.nycgovparks.org/parks/dyckman-house-museum/highlights/9753"
+],
+"src": "https://www.nycgovparks.org/parks/dyckman-house-museum/highlights/9753",
+"added": "2026-09-29",
+"checked": "2026-09-29",
+"by": "parallel"
+},
+{
+"bbl": 1000090007,
+"name": "James Watson House",
+"tags": [
+"history",
+"lore",
+"residents"
+],
+"year": 1793,
+"facts": [
+"The 1806 addition follows State Street’s curve, and its upper Ionic columns were believed to have been made from ships’ masts.",
+"In 1885, Rev. John J. Riordan bought Watson House for a mission protecting Irish immigrant girls. The Archdiocese says the mission helped more than 100,000 women.",
+"James Watson built the house in 1793. Elizabeth Ann Seton lived next door at No. 8, where she bore her fifth and last child."
+],
+"sources": [
+"http://s-media.nyc.gov/agencies/lpc/lp/0036.pdf",
+"https://archny.org/exhibits",
+"https://spcolr.org/our-lady-of-the-rosary"
+],
+"src": "http://s-media.nyc.gov/agencies/lpc/lp/0036.pdf",
+"added": "2026-09-29",
+"checked": "2026-09-29",
+"by": "parallel"
+},
+{
+"bbl": 1001420011,
+"name": "27 Harrison Street House",
+"tags": [
+"history",
+"residents"
+],
+"year": 1797,
+"facts": [
+"John McComb designed and built the house as his own residence, completing it in 1797; he also designed City Hall and Alexander Hamilton’s country house, The Grange.",
+"The house originally stood at 317 Washington Street, in a cove on the south side of a small point only 100 feet from the river.",
+"When the neighborhood became an urban-renewal area, the Landmarks Commission chose to save the houses; they were moved to Harrison Street and offered with unfinished interiors in 1975."
+],
+"sources": [
+"https://s-media.nyc.gov/agencies/lpc/lp/0552.pdf",
+"https://s-media.nyc.gov/agencies/lpc/lp/0552.pdf",
+"https://tribecacitizen.com/2021/01/28/loft-peeping-the-historic-row-house-at-27-harrison"
+],
+"src": "https://s-media.nyc.gov/agencies/lpc/lp/0552.pdf",
+"added": "2026-09-29",
+"checked": "2026-09-29",
+"by": "parallel"
 }
 ]
