@@ -15,7 +15,7 @@
   --paper:#e9e8e2; --panel:#f5f4f0; --ink:#23241f; --ink-soft:#5e5f57; --ink-faint:#a3a298; --line:#d3d1c8;
   --e0:#2d4867; --e1:#62774a; --e2:#94683b; --e3:#6e6c7d; --e4:#b58a2a; --unk:#b9b7ad;
   --shu:#b3392a; --shu-ink:#fdf7f3; --ring:#23241f;
-  --water:#cfd8d8; --land:#f1f0eb; --land-far:#e3e3dc; --park:#d3dcc3; --street:#dddbd2; --street-major:#cfccc1; --water-ink:#6f8589; --pool:#2a7d93; --school:#3d6b58;
+  --water:#cfd8d8; --land:#f1f0eb; --land-far:#e3e3dc; --park:#d3dcc3; --street:#dddbd2; --street-major:#cfccc1; --water-ink:#6f8589; --pool:#2a7d93; --school:#3d6b58; --market:#5b8a2b; --market-ink:#fbfbf2;
   --f-display:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",Georgia,serif;
   --f-body:"Zen Kaku Gothic New","Hiragino Sans","Helvetica Neue",Arial,sans-serif;
   --f-mono:"DM Mono",ui-monospace,Menlo,Consolas,monospace;
@@ -24,11 +24,11 @@
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#171816; --panel:#20211e; --ink:#ecebe4; --ink-soft:#a9a89f; --ink-faint:#5f5e57; --line:#34352f;
   --e0:#7f9fc6; --e1:#9bb07d; --e2:#cf9a63; --e3:#a3a1b6; --e4:#e0bb5c; --unk:#4a4a44;
-  --shu:#d9533f; --shu-ink:#1b0f0c; --ring:#ecebe4; --water:#0f1415; --land:#1d1e1b; --land-far:#181917; --park:#232b1f; --street:#2b2c28; --street-major:#383934; --water-ink:#5c7479; --pool:#6cc6db; --school:#86c2a8; --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.45); color-scheme:dark}}
+  --shu:#d9533f; --shu-ink:#1b0f0c; --ring:#ecebe4; --water:#0f1415; --land:#1d1e1b; --land-far:#181917; --park:#232b1f; --street:#2b2c28; --street-major:#383934; --water-ink:#5c7479; --pool:#6cc6db; --school:#86c2a8; --market:#9fcd6b; --market-ink:#18200f; --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.45); color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#171816; --panel:#20211e; --ink:#ecebe4; --ink-soft:#a9a89f; --ink-faint:#5f5e57; --line:#34352f;
   --e0:#7f9fc6; --e1:#9bb07d; --e2:#cf9a63; --e3:#a3a1b6; --e4:#e0bb5c; --unk:#4a4a44;
-  --shu:#d9533f; --shu-ink:#1b0f0c; --ring:#ecebe4; --water:#0f1415; --land:#1d1e1b; --land-far:#181917; --park:#232b1f; --street:#2b2c28; --street-major:#383934; --water-ink:#5c7479; --pool:#6cc6db; --school:#86c2a8; --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.45); color-scheme:dark}
+  --shu:#d9533f; --shu-ink:#1b0f0c; --ring:#ecebe4; --water:#0f1415; --land:#1d1e1b; --land-far:#181917; --park:#232b1f; --street:#2b2c28; --street-major:#383934; --water-ink:#5c7479; --pool:#6cc6db; --school:#86c2a8; --market:#9fcd6b; --market-ink:#18200f; --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.45); color-scheme:dark}
 [hidden]{display:none!important}
 *,*::before,*::after{box-sizing:border-box}
 html,body{height:100%;margin:0}
@@ -58,6 +58,7 @@ h1{font-family:var(--f-display);font-weight:800;font-size:22px;line-height:1.15;
 .chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:transparent;border-radius:999px;padding:4px 10px 4px 8px;font-size:12px;cursor:pointer;
   font-family:var(--f-body);font-variant-numeric:tabular-nums}
 .chip .sw{width:9px;height:9px;border-radius:50%;background:var(--c)}
+.chip.market .sw{border-radius:50% 50% 50% 0;transform:rotate(-45deg)}
 .chip.stamp .sw{border-radius:2px;background:var(--shu);transform:rotate(8deg)}
 .filters{display:grid;gap:14px}
 .fgroup{display:grid;gap:8px;min-width:0}
@@ -135,6 +136,11 @@ h1{font-family:var(--f-display);font-weight:800;font-size:22px;line-height:1.15;
 .zrow b{font-weight:700;font-size:14px}
 .zrow span{color:var(--ink-soft);font-size:12.5px;line-height:1.45}
 .znote{margin:0;font-size:11.5px;color:var(--ink-soft)}
+button.amenity{width:100%;text-align:left;background:none;font:inherit;cursor:pointer}
+.amenity.mkt{color:var(--market)}
+.amenity.mkt:hover{border-color:var(--market)}
+.mstats{grid-template-columns:1fr 1fr}
+.stat b.sm{font-size:14px;font-family:var(--f-body);font-weight:700;line-height:1.35}
 .fine{font-size:11.5px;color:var(--ink-soft);line-height:1.5;border-top:1px solid var(--line);padding-top:12px}
 
 .tools{position:fixed;left:16px;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);display:flex;gap:8px;align-items:flex-end;z-index:2}
@@ -201,6 +207,7 @@ h1{font-family:var(--f-display);font-weight:800;font-size:22px;line-height:1.15;
     <div class="fgroup">
       <div class="legend-label">Stamps</div>
       <div class="chips" id="storyChips"></div>
+      <div class="chips"><button class="chip market" type="button" id="marketChip" aria-pressed="true" style="--c:var(--market)" disabled><span class="sw"></span>Farmers markets<small id="marketCount">…</small></button></div>
     </div>
     <div class="fsum"><span id="matchCount" aria-live="polite"></span><button type="button" id="clearAll" hidden>Clear filters</button></div>
   </div>
@@ -240,6 +247,8 @@ const tagOn={lore:true,film:true,residents:true,history:true};
 const storyOn=st=>st.tags.some(t=>tagOn[t]);
 const storyVisible=st=>storyOn(st)&&(!filtersActive||(st.i!=null&&MATCH[st.i]));
 let POOLS=new Map();
+let MKT=null, showMarkets=true, NEARM=null, NEARD=null;
+const walkMin=d=>Math.max(1,Math.round(d*1.25/80)); // straight-line meters -> minutes on the grid
 const TYPES=[
   {k:"town",label:"Townhouses",hint:"One- and two-family houses",cls:"AB"},
   {k:"walkup",label:"Walk-ups",hint:"Apartments, no elevator",cls:"C"},
@@ -264,6 +273,7 @@ const HEIGHTS=[
 const SPOTS=[
   {k:"homepool",label:"A pool at home",hint:"Residential buildings with a permitted pool",ring:"pool",pools:true,test:i=>POOLS.has(D.bbl[i])&&RES.has(D.cl[i][0])},
   {k:"anypool",label:"Anywhere to swim",hint:"Any permitted pool, gyms and hotels too",ring:"pool",pools:true,test:i=>POOLS.has(D.bbl[i])},
+  {k:"market",label:"Five-minute walk to a farmers market",hint:"Estimated walk along the street grid",ring:"market",needs:"markets",test:i=>NEARD&&walkMin(NEARD[i])<=5},
   {k:"landmark",label:"Officially a landmark",hint:"Individual or interior NYC landmark",ring:"shu",test:i=>D.lm[i]>0},
   {k:"district",label:"In a historic district",ring:"shu",test:i=>D.h[i]>0},
   {k:"elder",label:"Elder of the block",hint:"The oldest building on its block",ring:"ink",test:i=>D.f[i]&1},
@@ -290,7 +300,7 @@ let origin=null;
 
 function readColors(){
   const cs=getComputedStyle(document.documentElement);
-  for (const k of ["paper","ink","ink-soft","ink-faint","e0","e1","e2","e3","e4","unk","shu","shu-ink","ring","panel","water","land","land-far","park","street","street-major","water-ink","pool","school"]) colors[k]=cs.getPropertyValue("--"+k).trim();
+  for (const k of ["paper","ink","ink-soft","ink-faint","e0","e1","e2","e3","e4","unk","shu","shu-ink","ring","panel","water","land","land-far","park","street","street-major","water-ink","pool","school","market","market-ink"]) colors[k]=cs.getPropertyValue("--"+k).trim();
 }
 function project(lat,lng){ // lat/lng -> rotated world meters
   const x=(lng-origin[1])*origin[2], y=(lat-origin[0])*origin[3];
@@ -348,6 +358,19 @@ function render(){
       if(sx<-80||sx>W+80||sy<-20||sy>H+20) continue;
       ctx.lineWidth=4; ctx.strokeStyle=colors.land; ctx.globalAlpha=.85; ctx.strokeText(n.toUpperCase().split("").join(" "),sx,sy);
       ctx.globalAlpha=1; ctx.fillStyle=colors["ink-soft"]; ctx.fillText(n.toUpperCase().split("").join(" "),sx,sy);
+    }
+  }
+  // farmers market pins
+  if(MKT&&showMarkets){
+    const pr=Math.max(5,Math.min(10,4+cam.s*5));
+    for(const m of MKT.markets){ const [sx,sy]=toScreen(m.rx,m.ry); if(sx<-20||sx>W+20||sy<-30||sy>H+20) continue;
+      ctx.save(); ctx.translate(sx,sy-pr*1.2);
+      ctx.fillStyle=colors.market; ctx.beginPath(); ctx.moveTo(0,pr*1.2); ctx.bezierCurveTo(-pr*1.1,pr*.2,-pr,-pr,0,-pr); ctx.bezierCurveTo(pr,-pr,pr*1.1,pr*.2,0,pr*1.2); ctx.fill();
+      ctx.strokeStyle=colors["market-ink"]; ctx.lineWidth=Math.max(1,pr*.16); ctx.lineCap="round";
+      ctx.beginPath(); ctx.moveTo(0,pr*.55); ctx.lineTo(0,-pr*.45); ctx.moveTo(0,-.05*pr); ctx.lineTo(-pr*.32,-pr*.35); ctx.moveTo(0,pr*.2); ctx.lineTo(pr*.32,-pr*.1); ctx.stroke();
+      ctx.restore();
+      if(cam.s>0.9){ ctx.font=`600 11px ${getComputedStyle(document.body).getPropertyValue("--f-body")}`; ctx.textAlign="center"; ctx.textBaseline="top"; ctx.lineWidth=3; ctx.strokeStyle=colors.land; ctx.fillStyle=colors.market;
+        ctx.strokeText(m.name,sx,sy+4); ctx.fillText(m.name,sx,sy+4); }
     }
   }
   // story stamps
@@ -505,6 +528,7 @@ function cardOffset(){ const c=document.getElementById("card");
 
 function pick(sx,sy){
   const [wx,wy]=toWorld(sx,sy);
+  if(MKT&&showMarkets){ let best=null,bd=16; for(const m of MKT.markets){ const [x,y]=toScreen(m.rx,m.ry); const pr=Math.max(5,Math.min(10,4+cam.s*5)); const d=Math.hypot(x-sx,y-pr*1.2-sy); if(d<bd){bd=d;best=m;} } if(best){ select({market:best}); return; } }
   { let best=null,bd=18; for(const st of STORIES){ if(!storyVisible(st)) continue; const [x,y]=toScreen(st.rx,st.ry);const d=Math.hypot(x-sx,y-sy); if(d<bd){bd=d;best=st;}} if(best){select({story:best,i:best.i}); return;} }
   const tol=Math.max(14/cam.s, 8); const c0=Math.floor((wx-tol)/GC),c1=Math.floor((wx+tol)/GC),r0=Math.floor((wy-tol)/GC),r1=Math.floor((wy+tol)/GC);
   let best=-1,bd=tol;
@@ -569,6 +593,9 @@ function select(o,fly=false){
     if(pool){ const [types,last,names]=pool; const t=types.map(x=>x.toLowerCase()).join(" and ");
       html+=`<div class="amenity"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M2 8c2.2 0 2.2-2 4.5-2S8.7 8 11 8s2.2-2 4.5-2S17.8 8 20 8M2 13c2.2 0 2.2-2 4.5-2s2.2 2 4.5 2 2.2-2 4.5-2 2.3 2 4.5 2M2 18c2.2 0 2.2-2 4.5-2s2.2 2 4.5 2 2.2-2 4.5-2 2.3 2 4.5 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
         <div><b>${t.charAt(0).toUpperCase()+t.slice(1)} pool</b><span>Permitted by the NYC Health Department${last?`, last inspected ${new Date(last+"-01T12:00").toLocaleString("en-US",{month:"long",year:"numeric"})}`:""}.${names.length?` Permit holder: ${esc(names.join("; "))}.`:""}${last&&last<"2023"?" An old inspection date can mean the pool has since closed.":""}</span></div></div>`; }
+    if(NEARD){ const m=MKT.markets[NEARM[i]], mins=walkMin(NEARD[i]);
+      html+=`<button type="button" class="amenity mkt" data-m="${NEARM[i]}"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 20c-4-4-6.5-7.5-6.5-11a6.5 6.5 0 0 1 13 0c0 3.5-2.5 7-6.5 11Z" fill="currentColor"/><path d="M11 15V6.5M11 10 8.3 7.6M11 12.2l2.7-2.2" stroke="var(--panel)" stroke-width="1.4" stroke-linecap="round" fill="none"/></svg>
+        <div><b>${esc(m.name)}</b><span>Nearest farmers market, about ${mins} ${mins===1?"minute":"minutes"} on foot. ${esc(m.days)}${m.hours?", "+esc(m.hours):""}${/\.$/.test(m.hours||m.days)?"":"."}</span></div></button>`; }
     if(SCH) html+=zoneHTML(i);
     if(st) html+=storyHTML(st);
     const fs=factsFor(i,st);
@@ -576,11 +603,19 @@ function select(o,fly=false){
     html+=`<p class="fine">From the city's land records (${esc(D.source)}). Construction years in city records are sometimes estimates, especially round ones like 1900 or 1920.${recNote}</p>`;
   } else if(st){
     html+=`<div><div class="eyebrow">Story</div><h2 class="addr">${esc(st.name)}</h2></div>`+storyHTML(st);
+  } else if(o.market){
+    const m=o.market;
+    const tags=[m.yearRound?"Open year-round":"Seasonal", m.ebt?"Accepts SNAP/EBT":null].filter(Boolean);
+    html+=`<div><div class="eyebrow"><span class="era-tag" style="--c:var(--market)"><i></i>Farmers market · ${esc(String(MKT.year))} season</span></div><h2 class="addr">${esc(m.name)}</h2><div class="src" style="margin-top:4px">${esc(m.addr)}</div></div>
+      <div class="stats mstats"><div class="stat"><b class="sm">${esc(m.days||"—")}</b><span>MARKET DAYS</span></div><div class="stat"><b class="sm">${esc(m.hours||"—")}</b><span>HOURS</span></div></div>
+      <div class="tags">${tags.map(t=>`<span class="tag">${t}</span>`).join("")}</div>
+      <p class="fine">From the city's farmers market list for ${esc(String(MKT.year))}. Days and hours can change with the season, so check with the market before you go.</p>`;
   }
   body.innerHTML=html; card.hidden=false; document.body.classList.add("card-open"); body.scrollTop=0;
-  sel=st?{rx:st.rx,ry:st.ry,i:st.i}:{rx:RX[i],ry:RY[i],i};
+  sel=o.market?{rx:o.market.rx,ry:o.market.ry,i:null}:st?{rx:st.rx,ry:st.ry,i:st.i}:{rx:RX[i],ry:RY[i],i};
+  const mk=body.querySelector(".mkt"); if(mk) mk.onclick=()=>select({market:MKT.markets[+mk.dataset.m]},true);
   if(fly){
-    sel.flyer = st ? st.name : prettyAddr(D.ad[i]);
+    sel.flyer = o.market ? o.market.name : st ? st.name : prettyAddr(D.ad[i]);
     flyTo(sel.rx,sel.ry,Math.max(1.8,cam.s),{arc:true,onArrive:()=>{ if(!sel) return; sel.ripple=performance.now(); ripple(); }});
   } else flyTo(sel.rx,sel.ry,Math.max(cam.s,0.45));
 }
@@ -615,7 +650,9 @@ q.addEventListener("input",()=>{
   const s=q.value.trim().toUpperCase().replace(/\bST\b/g,"STREET").replace(/\bAVE?\b/g,"AVENUE").replace(/(\d+)(ST|ND|RD|TH)\b/g,"$1");
   hits=[]; if(s.length<2||!D){res.hidden=true;return;}
   for(const st of STORIES) if(st.name.toUpperCase().includes(q.value.trim().toUpperCase())) hits.push({story:st,i:st.i});
-  const qq=q.value.trim().toUpperCase(); hits.sort((a,b)=>(b.story.name.toUpperCase()===qq)-(a.story.name.toUpperCase()===qq)||(b.story.name.toUpperCase().startsWith(qq))-(a.story.name.toUpperCase().startsWith(qq)));
+  if(MKT) for(const m of MKT.markets) if(m.name.toUpperCase().includes(q.value.trim().toUpperCase())) hits.push({market:m});
+  const nm=h=>(h.market?h.market.name:h.story.name).toUpperCase();
+  const qq=q.value.trim().toUpperCase(); hits.sort((a,b)=>(nm(b)===qq)-(nm(a)===qq)||(nm(b).startsWith(qq))-(nm(a).startsWith(qq))); if(0) hits.sort((a,b)=>(b.story.name.toUpperCase()===qq)-(a.story.name.toUpperCase()===qq)||(b.story.name.toUpperCase().startsWith(qq))-(a.story.name.toUpperCase().startsWith(qq)));
   for(let i=0;i<N&&hits.length<10;i++) if(D.ad[i].startsWith(s)||(s.length>4&&D.ad[i].includes(s))) hits.push({i,story:storyByBbl.get(D.bbl[i])});
   active=0; renderHits();
 });
@@ -625,7 +662,7 @@ q.addEventListener("keydown",e=>{ if(res.hidden) return;
   else if(e.key==="Enter"&&hits[active]){choose(hits[active]);}});
 function renderHits(){
   if(!hits.length){res.innerHTML=`<li style="padding:8px;color:var(--ink-soft);font-size:13px">No match. Try a house number and street, like “171 5 Avenue”.</li>`;res.hidden=false;return;}
-  res.innerHTML=hits.map((h,k)=>`<li><button type="button" data-k="${k}" class="${k===active?"active":""}"><span>${esc(h.story?h.story.name:prettyAddr(D.ad[h.i]))}</span><span class="meta">${h.i>=0&&h.i!=null?(D.yr[h.i]||""):""}</span></button></li>`).join("");
+  res.innerHTML=hits.map((h,k)=>`<li><button type="button" data-k="${k}" class="${k===active?"active":""}"><span>${esc(h.market?h.market.name:h.story?h.story.name:prettyAddr(D.ad[h.i]))}</span><span class="meta">${h.market?"market":h.i>=0&&h.i!=null?(D.yr[h.i]||""):""}</span></button></li>`).join("");
   res.hidden=false; res.querySelectorAll("button").forEach(b=>b.onclick=()=>choose(hits[+b.dataset.k]));
 }
 function choose(h){ res.hidden=true; q.blur(); select(h,true); }
@@ -635,7 +672,7 @@ document.addEventListener("click",e=>{ if(!e.target.closest(".search")) res.hidd
 function applyFilters(){
   if(!D) return;
   const eraAll=show.every(Boolean);
-  const spots=SPOTS.filter(o=>FILT.spots.has(o.k)&&(!o.pools||POOLS.size));
+  const spots=SPOTS.filter(o=>FILT.spots.has(o.k)&&(!o.pools||POOLS.size)&&(!o.needs||NEARD));
   const zl=zoneLayer, pick=FILT.zonePick;
   filtersActive = !eraAll||FILT.types.size>0||FILT.heights.size>0||spots.length>0||(!!pick&&!!SCH&&!!zl);
   if(!MATCH) MATCH=new Uint8Array(N);
@@ -688,7 +725,7 @@ function buildChips(){
 }
 function buildSpots(){
   if(!D) return; const poolsReady=POOLS.size>0;
-  SPOTS.forEach(o=>{ o.disabled=!!o.pools&&!poolsReady; o.count=o.disabled?null:counts(o.test); });
+  SPOTS.forEach(o=>{ o.disabled=(!!o.pools&&!poolsReady)||(o.needs==="markets"&&!NEARD); o.count=o.disabled?null:counts(o.test); });
   const el=document.getElementById("ddSpot");
   multiDD(el,"spots","Spotlight","Nothing in the spotlight",SPOTS,FILT.spots,
     ()=>`<span class="seg" role="group" aria-label="How to combine"><button type="button" data-m="all" aria-pressed="${FILT.spotAll}">Match all</button><button type="button" data-m="any" aria-pressed="${!FILT.spotAll}">Match any</button></span>`);
@@ -726,6 +763,16 @@ addEventListener("resize",resize);
 fetch("geo.json").then(r=>r.json()).then(g=>{prepGeo(g);draw();}).catch(e=>console.warn("Base map didn't load",e));
 fetch("schools.json").then(r=>r.json()).then(z=>{ z.zones.forEach(q=>q.r=q.rings.map(rotArr)); for(const q of z.zones){const x=q.lx,y=q.ly; q.lx=x*COS-y*SIN; q.ly=x*SIN+y*COS;} SCH=z;
   document.getElementById("zoneLayer").disabled=false; fillZonePick(); applyFilters(); }).catch(e=>console.warn("School zones didn't load",e));
+let mktRaw=null; fetch("markets.json").then(r=>r.json()).then(m=>{mktRaw=m; linkMarkets();}).catch(e=>console.warn("Market data didn't load",e));
+function linkMarkets(){
+  if(!mktRaw||!D||MKT) return;
+  for(const m of mktRaw.markets){ const [rx,ry]=project(m.lat,m.lng); m.rx=rx; m.ry=ry; }
+  MKT=mktRaw; NEARM=new Uint8Array(N); NEARD=new Float32Array(N);
+  for(let i=0;i<N;i++){ let b=1e12,k=0; for(let j=0;j<MKT.markets.length;j++){ const m=MKT.markets[j], dx=RX[i]-m.rx, dy=RY[i]-m.ry, d=dx*dx+dy*dy; if(d<b){b=d;k=j;} } NEARM[i]=k; NEARD[i]=Math.sqrt(b); }
+  const chip=document.getElementById("marketChip"); chip.disabled=false; document.getElementById("marketCount").textContent=MKT.markets.length;
+  chip.onclick=()=>{ showMarkets=!showMarkets; chip.setAttribute("aria-pressed",showMarkets); draw(); };
+  buildSpots(); applyFilters();
+}
 let poolsRaw=null; fetch("pools.json").then(r=>r.json()).then(p=>{poolsRaw=p; linkPools();}).catch(e=>console.warn("Pool data didn't load",e));
 function linkPools(){
   if(!poolsRaw||!D) return; const idx=new Map(); D.bbl.forEach((b,i)=>idx.set(b,i));
@@ -748,7 +795,7 @@ Promise.all([fetch("buildings.json").then(r=>r.json()), fetch("stories.json").th
   }
   buildChips();
   document.getElementById("count").textContent=`${N.toLocaleString()} buildings · ${STORIES.length} stories · ${d.source}`;
-  resize(); linkPools();
+  resize(); linkPools(); linkMarkets();
   const s=Math.min(W/(x1-x0), H/(y1-y0))*0.92; fitView={x:(x0+x1)/2,y:(y0+y1)/2,s};
   if(W>720) fitView.x -= 60/s; // leave room for the panel
   Object.assign(cam,fitView);
