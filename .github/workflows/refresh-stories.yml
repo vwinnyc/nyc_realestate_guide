@@ -33,6 +33,10 @@ jobs:
         continue-on-error: true
         run: python tools/refresh_pools.py
         
+      - name: Update farmers markets from the city's list
+        continue-on-error: true
+        run: python tools/refresh_markets.py
+        
       - name: Research with Parallel
         id: run
         env:
@@ -60,5 +64,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add building-stories/stories.json building-stories/researched.json building-stories/pools.json
+                    git add building-stories/stories.json building-stories/researched.json building-stories/pools.json building-stories/markets.json
           git diff --cached --quiet || (git commit -m "Story refresh: record checked buildings" && git push)
