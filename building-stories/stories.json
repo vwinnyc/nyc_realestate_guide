@@ -1,0 +1,1291 @@
+[
+{
+"bbl": 1011250025,
+"name": "The Dakota",
+"tags": [
+"residents",
+"film",
+"lore"
+],
+"year": 1884,
+"facts": [
+"Designed by Henry J. Hardenbergh, who later designed the Plaza Hotel.",
+"A popular legend says it was named because the Upper West Side felt as remote as the Dakota Territory. Historians doubt the story.",
+"John Lennon lived here, and the exterior stood in for the Bramford in Rosemary's Baby (1968)."
+],
+"src": "https://en.wikipedia.org/wiki/The_Dakota"
+},
+{
+"bbl": 1008510001,
+"name": "Flatiron Building",
+"tags": [
+"history"
+],
+"year": 1902,
+"facts": [
+"Designed by Daniel Burnham's firm and first named the Fuller Building.",
+"New Yorkers nicknamed it the Flatiron for its triangular shape, and the name stuck.",
+"The gusts that whip around its narrow prow are part of the folklore behind the phrase \"23 skidoo.\""
+],
+"src": "https://en.wikipedia.org/wiki/Flatiron_Building"
+},
+{
+"bbl": 1007720064,
+"name": "Hotel Chelsea",
+"tags": [
+"residents",
+"history"
+],
+"year": 1884,
+"facts": [
+"Opened in the 1880s as one of the city's early cooperative apartment houses, then became a hotel.",
+"Arthur C. Clarke worked on 2001: A Space Odyssey while living here.",
+"Leonard Cohen wrote \"Chelsea Hotel #2\" about it."
+],
+"src": "https://en.wikipedia.org/wiki/Hotel_Chelsea"
+},
+{
+"bbl": 1008350041,
+"name": "Empire State Building",
+"tags": [
+"history"
+],
+"year": 1931,
+"facts": [
+"Built in just over a year and opened in May 1931.",
+"The top was designed as a mooring mast for airships. It never worked in practice.",
+"It has its own ZIP code: 10118."
+],
+"src": "https://en.wikipedia.org/wiki/Empire_State_Building"
+},
+{
+"bbl": 1012970023,
+"name": "Chrysler Building",
+"tags": [
+"history"
+],
+"year": 1930,
+"facts": [
+"Architect William Van Alen had the spire assembled secretly inside the tower, then hoisted it into place to claim the title of world's tallest building.",
+"The steel eagles and radiator-cap ornaments nod to Chrysler cars."
+],
+"src": "https://en.wikipedia.org/wiki/Chrysler_Building"
+},
+{
+"bbl": 1001237501,
+"name": "Woolworth Building",
+"tags": [
+"history"
+],
+"year": 1913,
+"facts": [
+"Designed by Cass Gilbert and nicknamed the Cathedral of Commerce.",
+"F. W. Woolworth reportedly paid for it in cash.",
+"It was the world's tallest building until 1930. Its upper floors are now condos."
+],
+"src": "https://en.wikipedia.org/wiki/Woolworth_Building"
+},
+{
+"bbl": 1012800001,
+"name": "Grand Central Terminal",
+"tags": [
+"history",
+"lore"
+],
+"year": 1913,
+"facts": [
+"The constellations on the Main Concourse ceiling are painted in reverse, as if seen from outside the sky.",
+"Restorers left one small dark patch on the ceiling uncleaned to show how grimy it had become.",
+"Two people whispering into opposite corners of the arches near the Oyster Bar can hear each other."
+],
+"src": "https://en.wikipedia.org/wiki/Grand_Central_Terminal"
+},
+{
+"bbl": 1008750069,
+"name": "The Players",
+"tags": [
+"residents",
+"history"
+],
+"year": 1888,
+"facts": [
+"The actor Edwin Booth founded this private club for actors and artists in 1888.",
+"Booth was the brother of John Wilkes Booth, Lincoln's assassin.",
+"Stanford White remodeled the house for the club."
+],
+"src": "https://en.wikipedia.org/wiki/The_Players_(club)"
+},
+{
+"bbl": 1008760018,
+"name": "34 Gramercy Park East",
+"tags": [
+"history"
+],
+"year": 1883,
+"facts": [
+"Completed in 1883, it's one of the oldest cooperative apartment buildings still standing in New York.",
+"Its residents are among those who can hold a key to Gramercy Park."
+],
+"src": "https://en.wikipedia.org/wiki/Gramercy_Park"
+},
+{
+"lat": 40.73805,
+"lng": -73.98617,
+"name": "Gramercy Park",
+"tags": [
+"history",
+"lore"
+],
+"year": 1831,
+"facts": [
+"Samuel Ruggles laid out the park in 1831 and sold the lots around it with park access attached.",
+"It's still private. Only residents of the surrounding lots can get a key, and the locks are changed regularly.",
+"It is one of only two private parks in New York City."
+],
+"src": "https://en.wikipedia.org/wiki/Gramercy_Park"
+},
+{
+"bbl": 1011657503,
+"name": "The Ansonia",
+"tags": [
+"residents",
+"lore"
+],
+"year": 1904,
+"facts": [
+"Its developer, W. E. D. Stokes, kept a small farm on the roof with chickens, ducks and goats, and sold fresh eggs to tenants.",
+"Babe Ruth lived here."
+],
+"src": "https://en.wikipedia.org/wiki/The_Ansonia"
+},
+{
+"bbl": 1005840030,
+"name": "75½ Bedford Street",
+"tags": [
+"residents"
+],
+"year": 1873,
+"facts": [
+"Often called the narrowest house in New York, at about 9½ feet wide.",
+"The poet Edna St. Vincent Millay lived here in the 1920s."
+],
+"src": "https://en.wikipedia.org/wiki/75%C2%BD_Bedford_Street"
+},
+{
+"bbl": 1021090106,
+"name": "Morris–Jumel Mansion",
+"tags": [
+"history",
+"lore"
+],
+"year": 1765,
+"facts": [
+"Built in 1765, it's the oldest surviving house in Manhattan.",
+"George Washington used it as his headquarters in the fall of 1776.",
+"Visitors have long reported sightings of Eliza Jumel, its famous former owner."
+],
+"src": "https://en.wikipedia.org/wiki/Morris%E2%80%93Jumel_Mansion"
+},
+{
+"bbl": 1000870001,
+"name": "St. Paul's Chapel",
+"tags": [
+"history"
+],
+"year": 1766,
+"facts": [
+"The oldest surviving church building in Manhattan.",
+"George Washington prayed here after his inauguration in 1789.",
+"It survived September 11 with little damage and served as a relief center for recovery workers."
+],
+"src": "https://en.wikipedia.org/wiki/St._Paul%27s_Chapel"
+},
+{
+"bbl": 1000070035,
+"name": "Fraunces Tavern",
+"tags": [
+"history"
+],
+"year": 1719,
+"facts": [
+"George Washington said farewell to his officers here in December 1783.",
+"The building you see today is largely a 1907 reconstruction."
+],
+"src": "https://en.wikipedia.org/wiki/Fraunces_Tavern"
+},
+{
+"bbl": 1012747504,
+"name": "The Plaza",
+"tags": [
+"film",
+"history"
+],
+"year": 1907,
+"facts": [
+"Opened in 1907, designed by Henry J. Hardenbergh.",
+"Home of Eloise, the girl from Kay Thompson's children's books who lives on the top floor."
+],
+"src": "https://en.wikipedia.org/wiki/The_Plaza_Hotel"
+},
+{
+"bbl": 1001890035,
+"name": "Hook & Ladder 8",
+"tags": [
+"film"
+],
+"year": 1903,
+"facts": [
+"A working FDNY firehouse.",
+"It played the Ghostbusters' headquarters in the 1984 film, and the crew displays a Ghostbusters sign inside."
+],
+"src": "https://en.wikipedia.org/wiki/Hook_%26_Ladder_8"
+},
+{
+"bbl": 1005880006,
+"name": "90 Bedford Street",
+"tags": [
+"film"
+],
+"year": 1899,
+"facts": [
+"Its corner exterior appeared as the apartment building in Friends."
+],
+"src": "https://en.wikipedia.org/wiki/Friends"
+},
+{
+"bbl": 1006210052,
+"name": "66 Perry Street",
+"tags": [
+"film"
+],
+"year": 1866,
+"facts": [
+"Its stoop stood in for Carrie Bradshaw's in Sex and the City.",
+"Fans visit so often that the owners have put up a chain to keep them off the steps."
+],
+"src": "https://en.wikipedia.org/wiki/Sex_and_the_City"
+},
+{
+"bbl": 1018840001,
+"name": "Tom's Restaurant",
+"tags": [
+"film"
+],
+"year": 1904,
+"facts": [
+"The diner's exterior stood in for Monk's Café in Seinfeld.",
+"It also inspired Suzanne Vega's song \"Tom's Diner.\""
+],
+"src": "https://en.wikipedia.org/wiki/Tom%27s_Restaurant"
+},
+{
+"bbl": 1014060028,
+"name": "169 East 71st Street",
+"tags": [
+"film"
+],
+"year": 1867,
+"facts": [
+"Holly Golightly's brownstone in Breakfast at Tiffany's (1961)."
+],
+"src": "https://en.wikipedia.org/wiki/Breakfast_at_Tiffany%27s_(film)"
+},
+{
+"bbl": 1011180036,
+"name": "55 Central Park West",
+"tags": [
+"film",
+"lore"
+],
+"year": 1930,
+"facts": [
+"Dana Barrett's building in Ghostbusters, where the film's rooftop showdown takes place.",
+"For the movie, the top floors were extended with models and matte paintings."
+],
+"src": "https://en.wikipedia.org/wiki/55_Central_Park_West"
+},
+{
+"bbl": 1005440071,
+"name": "Merchant's House Museum",
+"tags": [
+"history",
+"lore"
+],
+"year": 1832,
+"facts": [
+"The Tredwell family lived here for almost a century, and the house survives with much of their furniture.",
+"It's often called the most haunted house in Manhattan. Gertrude Tredwell, the last of the family, is said to linger."
+],
+"src": "https://en.wikipedia.org/wiki/Merchant%27s_House_Museum"
+},
+{
+"bbl": 1008480055,
+"name": "Theodore Roosevelt Birthplace",
+"tags": [
+"history",
+"residents"
+],
+"year": 1923,
+"facts": [
+"Theodore Roosevelt was born on this site in 1858.",
+"The original house was demolished. This is a reconstruction built in 1923."
+],
+"src": "https://en.wikipedia.org/wiki/Theodore_Roosevelt_Birthplace_National_Historic_Site"
+},
+{
+"bbl": 1005440076,
+"name": "Cooper Union Foundation Building",
+"tags": [
+"history"
+],
+"year": 1859,
+"facts": [
+"Abraham Lincoln gave his Cooper Union speech in the Great Hall in 1860.",
+"Peter Cooper built in a round elevator shaft before passenger elevators were in common use."
+],
+"src": "https://en.wikipedia.org/wiki/Foundation_Building"
+},
+{
+"bbl": 1012660001,
+"name": "Radio City Music Hall",
+"tags": [
+"history"
+],
+"year": 1932,
+"facts": [
+"Opened in 1932 and home to the Rockettes.",
+"When it opened, it was the largest indoor theater in the world."
+],
+"src": "https://en.wikipedia.org/wiki/Radio_City_Music_Hall"
+},
+{
+"bbl": 1004120021,
+"name": "Katz's Delicatessen",
+"tags": [
+"film",
+"history"
+],
+"year": 1888,
+"facts": [
+"Katz's traces its founding to 1888.",
+"The famous diner scene in When Harry Met Sally (1989) was filmed here. A sign marks the table."
+],
+"src": "https://en.wikipedia.org/wiki/Katz%27s_Delicatessen"
+},
+{
+"bbl": 1000490001,
+"name": "Trinity Church",
+"tags": [
+"history"
+],
+"year": 1846,
+"facts": [
+"Alexander Hamilton is buried in the churchyard.",
+"When it was finished in 1846, its spire was the tallest point in New York City."
+],
+"src": "https://en.wikipedia.org/wiki/Trinity_Church_(Manhattan)"
+},
+{
+"bbl": 1000430006,
+"name": "Federal Hall",
+"tags": [
+"history"
+],
+"year": 1842,
+"facts": [
+"George Washington took the oath as the first U.S. president on this site in 1789.",
+"The earlier building where he was sworn in was demolished. Today's temple-front building opened in 1842 as the Custom House."
+],
+"src": "https://en.wikipedia.org/wiki/Federal_Hall"
+},
+{
+"bbl": 1000230019,
+"name": "New York Stock Exchange",
+"tags": [
+"history"
+],
+"year": 1903,
+"facts": [
+"The Broad Street building opened in 1903, with a sculpted pediment called Integrity Protecting the Works of Man.",
+"Traders first met under a buttonwood tree on Wall Street in 1792."
+],
+"src": "https://en.wikipedia.org/wiki/New_York_Stock_Exchange_Building"
+},
+{
+"bbl": 1000120001,
+"name": "Alexander Hamilton U.S. Custom House",
+"tags": [
+"history"
+],
+"year": 1907,
+"facts": [
+"Designed by Cass Gilbert, who later designed the Woolworth Building.",
+"The four statues out front, by Daniel Chester French, represent four continents.",
+"It now houses a Smithsonian museum of Native American history and culture."
+],
+"src": "https://en.wikipedia.org/wiki/Alexander_Hamilton_U.S._Custom_House"
+},
+{
+"bbl": 1000430002,
+"name": "40 Wall Street",
+"tags": [
+"history"
+],
+"year": 1930,
+"facts": [
+"In 1930 it briefly claimed the title of world's tallest building.",
+"It lost within weeks, when the Chrysler Building raised its secretly built spire."
+],
+"src": "https://en.wikipedia.org/wiki/40_Wall_Street"
+},
+{
+"bbl": 1000660001,
+"name": "Federal Reserve Bank of New York",
+"tags": [
+"history",
+"lore"
+],
+"year": 1924,
+"facts": [
+"Its gold vault sits about 80 feet below street level, on Manhattan's bedrock.",
+"It holds one of the largest stores of gold in the world, most of it owned by foreign governments."
+],
+"src": "https://en.wikipedia.org/wiki/Federal_Reserve_Bank_of_New_York_Building"
+},
+{
+"lat": 40.71275,
+"lng": -74.00597,
+"name": "City Hall",
+"tags": [
+"history"
+],
+"year": 1812,
+"facts": [
+"Completed in 1812, it's the oldest city hall in the United States that still houses its original government functions.",
+"Abraham Lincoln's body lay in state in the rotunda in 1865."
+],
+"src": "https://en.wikipedia.org/wiki/New_York_City_Hall"
+},
+{
+"bbl": 1001210001,
+"name": "Manhattan Municipal Building",
+"tags": [
+"history"
+],
+"year": 1914,
+"facts": [
+"A gilded statue called Civic Fame stands on top.",
+"A subway station is built right into its base."
+],
+"src": "https://en.wikipedia.org/wiki/Manhattan_Municipal_Building"
+},
+{
+"lat": 40.72168,
+"lng": -73.99939,
+"name": "Haughwout Building",
+"tags": [
+"history"
+],
+"year": 1857,
+"facts": [
+"In 1857 it got the world's first commercial passenger elevator, built by Elisha Otis.",
+"Its cast-iron facade was designed to imitate a Venetian palace."
+],
+"src": "https://en.wikipedia.org/wiki/E._V._Haughwout_Building"
+},
+{
+"bbl": 1005090001,
+"name": "Old St. Patrick's Cathedral",
+"tags": [
+"history",
+"film",
+"lore"
+],
+"year": 1815,
+"facts": [
+"It was New York's Catholic cathedral until the Fifth Avenue cathedral opened in 1879.",
+"There are catacombs beneath the church.",
+"The baptism scene in The Godfather was filmed here."
+],
+"src": "https://en.wikipedia.org/wiki/Old_St._Patrick%27s_Cathedral"
+},
+{
+"lat": 40.71444,
+"lng": -73.9981,
+"name": "Nom Wah Tea Parlor",
+"tags": [
+"history"
+],
+"year": 0,
+"facts": [
+"Serving dim sum on Doyers Street since 1920, it's one of Chinatown's oldest restaurants.",
+"Doyers Street's sharp bend was once nicknamed the Bloody Angle."
+],
+"src": "https://en.wikipedia.org/wiki/Nom_Wah_Tea_Parlor"
+},
+{
+"bbl": 1001620053,
+"name": "Edward Mooney House",
+"tags": [
+"history"
+],
+"year": 1789,
+"facts": [
+"Built around 1785 to 1789, it's the oldest surviving townhouse in Manhattan.",
+"It went up just after the British left New York at the end of the Revolution."
+],
+"src": "https://en.wikipedia.org/wiki/Edward_Mooney_House"
+},
+{
+"bbl": 1004140056,
+"name": "Tenement Museum",
+"tags": [
+"history"
+],
+"year": 1863,
+"facts": [
+"About 7,000 people from some 20 countries lived at 97 Orchard Street between 1863 and 1935.",
+"The upper floors were sealed up for decades, which preserved them for the museum."
+],
+"src": "https://en.wikipedia.org/wiki/Lower_East_Side_Tenement_Museum"
+},
+{
+"bbl": 1002930003,
+"name": "Eldridge Street Synagogue",
+"tags": [
+"history"
+],
+"year": 1887,
+"facts": [
+"One of the first great synagogues built in America by Jewish immigrants from Eastern Europe.",
+"After a 20-year restoration, a new stained-glass window by Kiki Smith was installed in 2010."
+],
+"src": "https://en.wikipedia.org/wiki/Eldridge_Street_Synagogue"
+},
+{
+"bbl": 1004170054,
+"name": "Russ & Daughters",
+"tags": [
+"history"
+],
+"year": 0,
+"facts": [
+"A family-run appetizing shop, selling smoked fish and bagels on Houston Street for about a century.",
+"It was one of the first businesses in America to put \"& Daughters\" in its name."
+],
+"src": "https://en.wikipedia.org/wiki/Russ_%26_Daughters"
+},
+{
+"bbl": 1004630050,
+"name": "McSorley's Old Ale House",
+"tags": [
+"history",
+"lore"
+],
+"year": 0,
+"facts": [
+"It claims to date to 1854, which would make it one of the city's oldest bars.",
+"Women weren't allowed in until a 1970 court ruling.",
+"It serves just two kinds of beer: light and dark."
+],
+"src": "https://en.wikipedia.org/wiki/McSorley%27s_Old_Ale_House"
+},
+{
+"bbl": 1004660026,
+"name": "St. Mark's Church in-the-Bowery",
+"tags": [
+"history",
+"lore"
+],
+"year": 1799,
+"facts": [
+"Peter Stuyvesant, the last Dutch governor of New Amsterdam, is buried in a vault here.",
+"It stands on land that was once his farm, or bouwerij, which gave the Bowery its name."
+],
+"src": "https://en.wikipedia.org/wiki/St._Mark%27s_Church_in-the-Bowery"
+},
+{
+"lat": 40.72527,
+"lng": -73.992,
+"name": "CBGB",
+"tags": [
+"history"
+],
+"year": 0,
+"facts": [
+"The club at 315 Bowery helped launch punk and new wave: the Ramones, Talking Heads, Blondie and Patti Smith all played here.",
+"CBGB stood for Country, BlueGrass and Blues, the music its owner originally planned to book."
+],
+"src": "https://en.wikipedia.org/wiki/CBGB"
+},
+{
+"bbl": 1004350012,
+"name": "Physical Graffiti buildings",
+"tags": [
+"film"
+],
+"year": 0,
+"facts": [
+"96 and 98 St. Marks Place appear on the cover of Led Zeppelin's 1975 album Physical Graffiti.",
+"The buildings actually have five stories. One was cropped out so they'd fit the square album cover."
+],
+"src": "https://en.wikipedia.org/wiki/Physical_Graffiti"
+},
+{
+"lat": 40.73367,
+"lng": -74.00216,
+"name": "Stonewall Inn",
+"tags": [
+"history"
+],
+"year": 0,
+"facts": [
+"The 1969 Stonewall uprising here is widely seen as the start of the modern LGBTQ rights movement.",
+"In 2016 it became the first U.S. national monument dedicated to LGBTQ history."
+],
+"src": "https://en.wikipedia.org/wiki/Stonewall_Inn"
+},
+{
+"lat": 40.73468,
+"lng": -73.99906,
+"name": "Jefferson Market Library",
+"tags": [
+"history"
+],
+"year": 1877,
+"facts": [
+"It opened in 1877 as a courthouse.",
+"Its clock tower once served as a fire lookout.",
+"Neighbors saved it from demolition, and it reopened as a public library in 1967."
+],
+"src": "https://en.wikipedia.org/wiki/Jefferson_Market_Library"
+},
+{
+"bbl": 1005880003,
+"name": "Chumley's",
+"tags": [
+"history",
+"lore"
+],
+"year": 0,
+"facts": [
+"A Prohibition-era speakeasy with an unmarked entrance.",
+"Legend says the bar term \"86\" (to throw someone out) comes from its 86 Bedford Street address, where patrons slipped out when police arrived. Etymologists doubt it."
+],
+"src": "https://en.wikipedia.org/wiki/Chumley%27s"
+},
+{
+"bbl": 1005840027,
+"name": "Cherry Lane Theatre",
+"tags": [
+"history"
+],
+"year": 0,
+"facts": [
+"Converted into a theater in 1924, it's one of New York's oldest continuously running off-Broadway theaters.",
+"The building started out as a brewery and later a box factory."
+],
+"src": "https://en.wikipedia.org/wiki/Cherry_Lane_Theatre"
+},
+{
+"bbl": 1005840029,
+"name": "Isaacs-Hendricks House",
+"tags": [
+"history"
+],
+"year": 1799,
+"facts": [
+"Built in 1799, it's the oldest house in Greenwich Village.",
+"It's the next-door neighbor of 75½ Bedford Street, often called the city's narrowest house."
+],
+"src": "https://en.wikipedia.org/wiki/Isaacs%E2%80%93Hendricks_House"
+},
+{
+"lat": 40.73572,
+"lng": -74.00598,
+"name": "White Horse Tavern",
+"tags": [
+"residents",
+"lore"
+],
+"year": 0,
+"facts": [
+"Dylan Thomas drank here shortly before he fell ill at the Hotel Chelsea in 1953.",
+"It was a favorite of writers including Jack Kerouac and James Baldwin."
+],
+"src": "https://en.wikipedia.org/wiki/White_Horse_Tavern_(New_York_City)"
+},
+{
+"bbl": 1005530015,
+"name": "Electric Lady Studios",
+"tags": [
+"residents",
+"history"
+],
+"year": 0,
+"facts": [
+"Jimi Hendrix built this recording studio and opened it in 1970, weeks before his death.",
+"Artists from Stevie Wonder to Daft Punk have recorded here."
+],
+"src": "https://en.wikipedia.org/wiki/Electric_Lady_Studios"
+},
+{
+"bbl": 1007130001,
+"name": "Chelsea Market",
+"tags": [
+"history",
+"lore"
+],
+"year": 0,
+"facts": [
+"This was the National Biscuit Company (Nabisco) factory.",
+"The Oreo cookie was invented here in 1912."
+],
+"src": "https://en.wikipedia.org/wiki/Chelsea_Market"
+},
+{
+"bbl": 1008530001,
+"name": "Met Life Tower",
+"tags": [
+"history"
+],
+"year": 1909,
+"facts": [
+"From 1909 to 1913 it was the tallest building in the world.",
+"It was modeled on the Campanile in Venice's St. Mark's Square."
+],
+"src": "https://en.wikipedia.org/wiki/Metropolitan_Life_Insurance_Company_Tower"
+},
+{
+"bbl": 1008720078,
+"name": "Tammany Hall",
+"tags": [
+"history"
+],
+"year": 1929,
+"facts": [
+"Built as headquarters for Tammany Hall, the Democratic political machine that dominated city politics for decades.",
+"The machine's name came from Tamanend, a Lenape leader."
+],
+"src": "https://en.wikipedia.org/wiki/Tammany_Hall_(building)"
+},
+{
+"bbl": 1008750070,
+"name": "National Arts Club",
+"tags": [
+"residents",
+"lore"
+],
+"year": 0,
+"facts": [
+"This was the home of Samuel Tilden, governor of New York and 1876 presidential candidate.",
+"He reportedly feared for his safety and added steel doors, and a tunnel to 19th Street is part of the house's lore."
+],
+"src": "https://en.wikipedia.org/wiki/National_Arts_Club"
+},
+{
+"lat": 40.73646,
+"lng": -73.98729,
+"name": "Pete's Tavern",
+"tags": [
+"residents",
+"lore"
+],
+"year": 0,
+"facts": [
+"It claims to be one of the city's oldest continuously operating bars, stretching back to 1864.",
+"Legend says O. Henry wrote The Gift of the Magi in one of its booths."
+],
+"src": "https://en.wikipedia.org/wiki/Pete%27s_Tavern"
+},
+{
+"bbl": 1012570001,
+"name": "New York Public Library",
+"tags": [
+"history",
+"lore"
+],
+"year": 1911,
+"facts": [
+"The marble lions out front are named Patience and Fortitude. Mayor Fiorello La Guardia gave them those names in the 1930s.",
+"It opened in 1911 on the site of the old Croton reservoir."
+],
+"src": "https://en.wikipedia.org/wiki/New_York_Public_Library_Main_Branch"
+},
+{
+"bbl": 1012860001,
+"name": "St. Patrick's Cathedral",
+"tags": [
+"history"
+],
+"year": 1879,
+"facts": [
+"Dedicated in 1879, when this part of Fifth Avenue was still on the edge of town.",
+"It replaced Old St. Patrick's on Mulberry Street as the city's Catholic cathedral."
+],
+"src": "https://en.wikipedia.org/wiki/St._Patrick%27s_Cathedral_(Midtown_Manhattan)"
+},
+{
+"bbl": 1012600007,
+"name": "Algonquin Hotel",
+"tags": [
+"residents",
+"lore"
+],
+"year": 1902,
+"facts": [
+"Dorothy Parker and friends met for lunch here in the 1920s as the Algonquin Round Table.",
+"The hotel has kept a resident cat for decades. The males are named Hamlet and the females Matilda."
+],
+"src": "https://en.wikipedia.org/wiki/Algonquin_Hotel"
+},
+{
+"bbl": 1012650040,
+"name": "30 Rockefeller Plaza",
+"tags": [
+"history",
+"film"
+],
+"year": 1933,
+"facts": [
+"The famous 1932 photo Lunch atop a Skyscraper shows ironworkers on a beam during its construction.",
+"NBC's studios here are home to Saturday Night Live."
+],
+"src": "https://en.wikipedia.org/wiki/30_Rockefeller_Plaza"
+},
+{
+"bbl": 1010090001,
+"name": "Carnegie Hall",
+"tags": [
+"history"
+],
+"year": 1891,
+"facts": [
+"Tchaikovsky conducted on opening night in 1891.",
+"It was nearly torn down in 1960 before a campaign led by violinist Isaac Stern saved it."
+],
+"src": "https://en.wikipedia.org/wiki/Carnegie_Hall"
+},
+{
+"bbl": 1010130039,
+"name": "New Amsterdam Theatre",
+"tags": [
+"history",
+"lore"
+],
+"year": 1903,
+"facts": [
+"Home of the Ziegfeld Follies for years.",
+"Staff tell stories of Olive Thomas, a Follies star, whose ghost is said to walk the theater."
+],
+"src": "https://en.wikipedia.org/wiki/New_Amsterdam_Theatre"
+},
+{
+"bbl": 1008100001,
+"name": "Macy's Herald Square",
+"tags": [
+"film",
+"history"
+],
+"year": 1902,
+"facts": [
+"Setting of the film Miracle on 34th Street (1947).",
+"The store's wooden escalators, some of the first of their kind, are still running."
+],
+"src": "https://en.wikipedia.org/wiki/Macy%27s_Herald_Square"
+},
+{
+"lat": 40.74932,
+"lng": -73.96806,
+"name": "United Nations Headquarters",
+"tags": [
+"history",
+"lore"
+],
+"year": 1952,
+"facts": [
+"The land is under UN control by agreement with the United States.",
+"The UN issues its own postage stamps, valid only when mailed from the building."
+],
+"src": "https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations"
+},
+{
+"bbl": 1013070001,
+"name": "Seagram Building",
+"tags": [
+"history"
+],
+"year": 1958,
+"facts": [
+"Designed by Ludwig Mies van der Rohe.",
+"It was set back from Park Avenue behind a plaza, a choice that helped shape the city's 1961 zoning rules."
+],
+"src": "https://en.wikipedia.org/wiki/Seagram_Building"
+},
+{
+"lat": 40.74931,
+"lng": -73.9813,
+"name": "The Morgan Library",
+"tags": [
+"history",
+"residents"
+],
+"year": 1906,
+"facts": [
+"Built for financier J. P. Morgan's private library.",
+"During the Panic of 1907, Morgan locked bankers in the library overnight until they agreed to a rescue plan."
+],
+"src": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum"
+},
+{
+"bbl": 1010250043,
+"name": "Ed Sullivan Theater",
+"tags": [
+"film",
+"history"
+],
+"year": 1927,
+"facts": [
+"The Beatles made their American TV debut here on The Ed Sullivan Show in February 1964.",
+"It later became home to The Late Show, first with David Letterman and then Stephen Colbert."
+],
+"src": "https://en.wikipedia.org/wiki/Ed_Sullivan_Theater"
+},
+{
+"bbl": 1010150049,
+"name": "Sardi's",
+"tags": [
+"history"
+],
+"year": 0,
+"facts": [
+"Its walls are covered in hundreds of caricatures of Broadway stars.",
+"Opening-night casts have traditionally waited here for the reviews."
+],
+"src": "https://en.wikipedia.org/wiki/Sardi%27s"
+},
+{
+"bbl": 1010477502,
+"name": "Hearst Tower",
+"tags": [
+"history"
+],
+"year": 0,
+"facts": [
+"The six-story base from 1928 was meant to support a tower that wasn't built for almost 80 years.",
+"Norman Foster's diagonal-grid tower was finished on top of it in 2006."
+],
+"src": "https://en.wikipedia.org/wiki/Hearst_Tower_(Manhattan)"
+},
+{
+"bbl": 1012920069,
+"name": "Tiffany & Co. Fifth Avenue",
+"tags": [
+"film"
+],
+"year": 1940,
+"facts": [
+"Audrey Hepburn eats a pastry at its windows in the opening scene of Breakfast at Tiffany's (1961).",
+"A statue of Atlas holding a clock sits over the entrance. It moved here from an earlier Tiffany store."
+],
+"src": "https://en.wikipedia.org/wiki/Tiffany_%26_Co._Building"
+},
+{
+"bbl": 1011270029,
+"name": "The San Remo",
+"tags": [
+"residents"
+],
+"year": 1930,
+"facts": [
+"Its twin towers, designed by Emery Roth, are a signature of the Central Park West skyline.",
+"Its co-op board has famously turned down celebrity buyers."
+],
+"src": "https://en.wikipedia.org/wiki/The_San_Remo"
+},
+{
+"bbl": 1011300001,
+"name": "American Museum of Natural History",
+"tags": [
+"history",
+"film"
+],
+"year": 0,
+"facts": [
+"Founded in 1869. Theodore Roosevelt's father was one of its founders.",
+"The Night at the Museum films are set here."
+],
+"src": "https://en.wikipedia.org/wiki/American_Museum_of_Natural_History"
+},
+{
+"bbl": 1011707502,
+"name": "The Apthorp",
+"tags": [
+"residents",
+"film"
+],
+"year": 1908,
+"facts": [
+"A full-block apartment building built around a private central courtyard with fountains.",
+"Its courtyard has appeared in many films."
+],
+"src": "https://en.wikipedia.org/wiki/The_Apthorp"
+},
+{
+"bbl": 1019910032,
+"name": "Riverside Church",
+"tags": [
+"history"
+],
+"year": 1930,
+"facts": [
+"Its tower makes it the tallest church in the United States.",
+"The tower holds a carillon of 74 bells, including one of the largest tuned bells in the world."
+],
+"src": "https://en.wikipedia.org/wiki/Riverside_Church"
+},
+{
+"bbl": 1018650001,
+"name": "Cathedral of St. John the Divine",
+"tags": [
+"history",
+"lore"
+],
+"year": 1892,
+"facts": [
+"Construction began in 1892 and still isn't finished, which earned it the nickname St. John the Unfinished.",
+"Peacocks roam the grounds."
+],
+"src": "https://en.wikipedia.org/wiki/Cathedral_of_St._John_the_Divine"
+},
+{
+"lat": 40.78649,
+"lng": -73.9768,
+"name": "Café Lalo",
+"tags": [
+"film"
+],
+"year": 0,
+"facts": [
+"Tom Hanks waits for Meg Ryan here in You've Got Mail (1998)."
+],
+"src": "https://en.wikipedia.org/wiki/You%27ve_Got_Mail"
+},
+{
+"bbl": 1015000001,
+"name": "Guggenheim Museum",
+"tags": [
+"history"
+],
+"year": 1959,
+"facts": [
+"Frank Lloyd Wright's only major building in New York City.",
+"Wright worked on the design for about 15 years and died six months before it opened."
+],
+"src": "https://en.wikipedia.org/wiki/Solomon_R._Guggenheim_Museum"
+},
+{
+"bbl": 1015920001,
+"name": "Gracie Mansion",
+"tags": [
+"history",
+"residents"
+],
+"year": 1799,
+"facts": [
+"Built as a country house in 1799, when this was far outside the city.",
+"It has been the mayor's official residence since Fiorello La Guardia moved in, in 1942."
+],
+"src": "https://en.wikipedia.org/wiki/Gracie_Mansion"
+},
+{
+"bbl": 1013850001,
+"name": "The Frick",
+"tags": [
+"residents"
+],
+"year": 1914,
+"facts": [
+"Built as the home of industrialist Henry Clay Frick, who planned from the start for it to become a museum.",
+"It opened to the public in 1935."
+],
+"src": "https://en.wikipedia.org/wiki/Frick_Collection"
+},
+{
+"bbl": 1015020001,
+"name": "Carnegie Mansion",
+"tags": [
+"residents",
+"history"
+],
+"year": 1902,
+"facts": [
+"Andrew Carnegie's home, now the Cooper Hewitt design museum.",
+"It was one of the first private homes in the U.S. with a structural steel frame and a residential Otis elevator."
+],
+"src": "https://en.wikipedia.org/wiki/Andrew_Carnegie_Mansion"
+},
+{
+"lat": 40.76115,
+"lng": -73.95971,
+"name": "Mount Vernon Hotel Museum",
+"tags": [
+"history"
+],
+"year": 1799,
+"facts": [
+"Built in 1799 as a carriage house.",
+"From 1826 to 1833 it was a day hotel where city dwellers escaped to the countryside, which was then this part of Manhattan."
+],
+"src": "https://en.wikipedia.org/wiki/Mount_Vernon_Hotel_Museum"
+},
+{
+"bbl": 1019310010,
+"name": "Apollo Theater",
+"tags": [
+"history",
+"lore"
+],
+"year": 1914,
+"facts": [
+"Its Amateur Night has run since the 1930s and launched Ella Fitzgerald.",
+"Performers rub a stump from the Tree of Hope, which once stood nearby, for luck before they go on."
+],
+"src": "https://en.wikipedia.org/wiki/Apollo_Theater"
+},
+{
+"bbl": 1019300030,
+"name": "Hotel Theresa",
+"tags": [
+"residents",
+"history"
+],
+"year": 1913,
+"facts": [
+"Called the Waldorf of Harlem.",
+"Fidel Castro stayed here during his 1960 visit to the United Nations, and Nikita Khrushchev came to meet him."
+],
+"src": "https://en.wikipedia.org/wiki/Hotel_Theresa"
+},
+{
+"lat": 40.82146,
+"lng": -73.94753,
+"name": "Hamilton Grange",
+"tags": [
+"residents",
+"lore"
+],
+"year": 1802,
+"facts": [
+"Alexander Hamilton's country home, the only house he ever owned.",
+"It has been moved twice, most recently in 2008, when it was lifted and rolled into St. Nicholas Park."
+],
+"src": "https://en.wikipedia.org/wiki/Hamilton_Grange_National_Memorial"
+},
+{
+"lat": 40.80442,
+"lng": -73.95245,
+"name": "Minton's Playhouse",
+"tags": [
+"history"
+],
+"year": 0,
+"facts": [
+"Late-night jam sessions here in the 1940s with Thelonious Monk, Dizzy Gillespie and Charlie Parker helped create bebop."
+],
+"src": "https://en.wikipedia.org/wiki/Minton%27s_Playhouse"
+},
+{
+"bbl": 1017510064,
+"name": "Langston Hughes House",
+"tags": [
+"residents"
+],
+"year": 1869,
+"facts": [
+"The poet Langston Hughes lived and worked on the top floor for the last 20 years of his life."
+],
+"src": "https://en.wikipedia.org/wiki/Langston_Hughes_House"
+},
+{
+"bbl": 1021450001,
+"name": "United Palace",
+"tags": [
+"history"
+],
+"year": 1930,
+"facts": [
+"One of Loew's five Wonder Theatres, the lavish movie palaces the chain built around New York.",
+"Its interior mixes Moorish, Indian and other styles in one room."
+],
+"src": "https://en.wikipedia.org/wiki/United_Palace"
+},
+{
+"bbl": 1021790701,
+"name": "The Cloisters",
+"tags": [
+"history"
+],
+"year": 1939,
+"facts": [
+"Parts of several medieval European monasteries were shipped over and rebuilt here.",
+"John D. Rockefeller Jr. also bought the Palisades across the river so the view would stay unspoiled."
+],
+"src": "https://en.wikipedia.org/wiki/The_Cloisters"
+},
+{
+"lat": 40.76955,
+"lng": -73.9423,
+"name": "The Octagon",
+"tags": [
+"history",
+"lore"
+],
+"year": 1841,
+"facts": [
+"The domed rotunda was the entrance to the New York City Lunatic Asylum on what was then Blackwell's Island.",
+"Journalist Nellie Bly went undercover in the asylum in 1887 and exposed its conditions."
+],
+"src": "https://en.wikipedia.org/wiki/The_Octagon_(Roosevelt_Island)"
+},
+{
+"lat": 40.69342,
+"lng": -74.01886,
+"name": "Castle Williams",
+"tags": [
+"history"
+],
+"year": 1811,
+"facts": [
+"A round sandstone fort on Governors Island, finished in 1811 to guard the harbor.",
+"It later served as a military prison."
+],
+"src": "https://en.wikipedia.org/wiki/Castle_Williams"
+},
+{
+"bbl": 1000010101,
+"name": "Statue of Liberty",
+"tags": [
+"history"
+],
+"year": 1886,
+"facts": [
+"Liberty Island is part of the borough of Manhattan.",
+"Gustave Eiffel designed the iron framework inside."
+],
+"src": "https://en.wikipedia.org/wiki/Statue_of_Liberty"
+},
+{
+"bbl": 1000010201,
+"name": "Ellis Island",
+"tags": [
+"history"
+],
+"year": 1900,
+"facts": [
+"About 12 million immigrants passed through between 1892 and 1954.",
+"The main building opened in 1900, after a fire destroyed the first one."
+],
+"src": "https://en.wikipedia.org/wiki/Ellis_Island"
+}
+]
