@@ -1,0 +1,59 @@
+name: Refresh building stories
+
+# Runs on the 1st of each month, or any time from the Actions tab ("Run workflow").
+on:
+  schedule:
+    - cron: "17 14 1 * *"   # 10:17 a.m. New York time (14:17 UTC) on the 1st
+  workflow_dispatch:
+    inputs:
+      new:
+        description: "New buildings to research"
+        default: "10"
+      check:
+        description: "Existing stories to check for news"
+        default: "10"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Research with Parallel
+        id: run
+        env:
+          PARALLEL_API_KEY: ${{ secrets.PARALLEL_API_KEY }}
+        run: |
+          python tools/refresh_stories.py \
+            --new "${{ github.event.inputs.new || '10' }}" \
+            --check "${{ github.event.inputs.check || '10' }}"
+
+      # New facts go to a pull request for you to review. Merging it publishes them.
+      - name: Open a pull request for review
+        if: steps.run.outputs.changes != '0'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: story-refresh
+          add-paths: building-stories/
+          commit-message: "Story refresh: new facts for review"
+          title: "New building stories to review"
+          body-path: story-review.md
+          delete-branch: true
+
+      # Nothing new: just save which buildings were checked, so next month moves on.
+      - name: Save progress
+        if: steps.run.outputs.changes == '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add building-stories/stories.json building-stories/researched.json
+          git diff --cached --quiet || (git commit -m "Story refresh: record checked buildings" && git push)
