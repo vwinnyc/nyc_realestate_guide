@@ -12,6 +12,9 @@ on:
       check:
         description: "Existing stories to check for news"
         default: "10"
+      lore:
+        description: "Whimsy category: auto, all, oncewas, song, written, tradition, or seed (starter entries only, free)"
+        default: "auto"
 
 permissions:
   contents: write
@@ -27,18 +30,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          
+
       # Pool data comes straight from the city's inspection records, so it doesn't need review.
       - name: Update pools from NYC Health Department records
         continue-on-error: true
         run: python tools/refresh_pools.py
-        
+
       - name: Update farmers markets from the city's list
         continue-on-error: true
         run: python tools/refresh_markets.py
-        
+
       - name: Research with Parallel
         id: run
+        continue-on-error: true
         env:
           PARALLEL_API_KEY: ${{ secrets.PARALLEL_API_KEY }}
         run: |
@@ -46,9 +50,18 @@ jobs:
             --new "${{ github.event.inputs.new || '10' }}" \
             --check "${{ github.event.inputs.check || '10' }}"
 
+      # Whimsy stamps: Once was, Song lines, Written here, Odd bylaws & traditions.
+      # Does one category a month (rotating). Run it by hand with "all" to do every category at once.
+      - name: Find whimsy stamps with Parallel
+        id: lore
+        continue-on-error: true
+        env:
+          PARALLEL_API_KEY: ${{ secrets.PARALLEL_API_KEY }}
+        run: python tools/find_lore.py --category "${{ github.event.inputs.lore || 'auto' }}"
+
       # New facts go to a pull request for you to review. Merging it publishes them.
       - name: Open a pull request for review
-        if: steps.run.outputs.changes != '0'
+        if: steps.run.outputs.changes > 0 || steps.lore.outputs.changes > 0
         uses: peter-evans/create-pull-request@v7
         with:
           branch: story-refresh
@@ -60,9 +73,9 @@ jobs:
 
       # Nothing new: just save which buildings were checked, so next month moves on.
       - name: Save progress
-        if: steps.run.outputs.changes == '0'
+        if: ${{ !(steps.run.outputs.changes > 0 || steps.lore.outputs.changes > 0) }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-                    git add building-stories/stories.json building-stories/researched.json building-stories/pools.json building-stories/markets.json
-          git diff --cached --quiet || (git commit -m "Story refresh: record checked buildings" && git push)
+          git add building-stories/
+          git diff --cached --quiet || (git commit -m "Monthly refresh: record checked buildings, pools and markets" && git push)
