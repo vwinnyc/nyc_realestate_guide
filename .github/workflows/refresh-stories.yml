@@ -22,12 +22,12 @@ permissions:
 
 jobs:
   refresh:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 60
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -62,7 +62,7 @@ jobs:
       # New facts go to a pull request for you to review. Merging it publishes them.
       - name: Open a pull request for review
         if: steps.run.outputs.changes > 0 || steps.lore.outputs.changes > 0
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: story-refresh
           add-paths: building-stories/
