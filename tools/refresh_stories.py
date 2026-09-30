@@ -21,7 +21,7 @@ RESEARCHED = os.path.join(SITE, "researched.json")  # lots checked that had no s
 SUMMARY = os.path.join(ROOT, "story-review.md")
 API = "https://api.parallel.ai/v1/tasks/runs"
 TODAY = dt.date.today()
-TAGS = ["history", "film", "lore", "residents"]
+TAGS = ["history", "film", "lore", "residents", "oncewas", "song", "written", "tradition"]
 
 STYLE = ("Write each fact as one or two plain sentences, 35 words or fewer, in active voice. "
          "Do not use em dashes. Only include facts you can support with a reliable source "

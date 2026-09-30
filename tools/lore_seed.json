@@ -1,0 +1,305 @@
+{
+ "updates": [
+  {
+   "name": "Hotel Chelsea",
+   "tags": [
+    "oncewas",
+    "song",
+    "written",
+    "tradition"
+   ],
+   "fact": "Longtime manager Stanley Bard was known for accepting art from struggling artists in place of rent.",
+   "src": null
+  },
+  {
+   "name": "Chelsea Market",
+   "tags": [
+    "oncewas"
+   ],
+   "fact": null,
+   "src": null
+  },
+  {
+   "name": "Jefferson Market Library",
+   "tags": [
+    "oncewas"
+   ],
+   "fact": null,
+   "src": null
+  },
+  {
+   "name": "Tenement Museum",
+   "tags": [
+    "oncewas"
+   ],
+   "fact": null,
+   "src": null
+  },
+  {
+   "name": "Carnegie Mansion",
+   "tags": [
+    "oncewas"
+   ],
+   "fact": null,
+   "src": null
+  },
+  {
+   "name": "The Frick",
+   "tags": [
+    "oncewas"
+   ],
+   "fact": null,
+   "src": null
+  },
+  {
+   "name": "Mount Vernon Hotel Museum",
+   "tags": [
+    "oncewas"
+   ],
+   "fact": null,
+   "src": null
+  },
+  {
+   "name": "Gracie Mansion",
+   "tags": [
+    "oncewas"
+   ],
+   "fact": null,
+   "src": null
+  },
+  {
+   "name": "Woolworth Building",
+   "tags": [
+    "oncewas"
+   ],
+   "fact": null,
+   "src": null
+  },
+  {
+   "name": "Hotel Theresa",
+   "tags": [
+    "oncewas"
+   ],
+   "fact": "It stopped operating as a hotel in the 1960s and was converted to offices.",
+   "src": null
+  },
+  {
+   "name": "Tom's Restaurant",
+   "tags": [
+    "song"
+   ],
+   "fact": null,
+   "src": null
+  },
+  {
+   "name": "Physical Graffiti buildings",
+   "tags": [
+    "song"
+   ],
+   "fact": null,
+   "src": null
+  },
+  {
+   "name": "Pete's Tavern",
+   "tags": [
+    "written"
+   ],
+   "fact": null,
+   "src": null
+  },
+  {
+   "name": "Langston Hughes House",
+   "tags": [
+    "written"
+   ],
+   "fact": null,
+   "src": null
+  },
+  {
+   "name": "Algonquin Hotel",
+   "tags": [
+    "written",
+    "tradition"
+   ],
+   "fact": "E. B. White wrote his 1948 essay Here Is New York while staying at the hotel.",
+   "src": "https://en.wikipedia.org/wiki/Here_Is_New_York"
+  },
+  {
+   "name": "The San Remo",
+   "tags": [
+    "tradition"
+   ],
+   "fact": null,
+   "src": null
+  },
+  {
+   "name": "Sardi's",
+   "tags": [
+    "tradition"
+   ],
+   "fact": null,
+   "src": null
+  },
+  {
+   "name": "Apollo Theater",
+   "tags": [
+    "tradition"
+   ],
+   "fact": null,
+   "src": null
+  },
+  {
+   "name": "Gramercy Park",
+   "tags": [
+    "tradition"
+   ],
+   "fact": "The gates traditionally open to the public for carolers on Christmas Eve, one of the few times outsiders can step inside.",
+   "src": null
+  },
+  {
+   "name": "30 Rockefeller Plaza",
+   "tags": [
+    "tradition"
+   ],
+   "fact": "Construction workers put up the first Christmas tree here in 1931. The official tree lighting began in 1933.",
+   "src": "https://en.wikipedia.org/wiki/Rockefeller_Center_Christmas_Tree"
+  },
+  {
+   "name": "Macy's Herald Square",
+   "tags": [
+    "tradition"
+   ],
+   "fact": "The Macy's Thanksgiving Day Parade, first held in 1924, ends in front of the store.",
+   "src": "https://en.wikipedia.org/wiki/Macy%27s_Thanksgiving_Day_Parade"
+  },
+  {
+   "name": "McSorley's Old Ale House",
+   "tags": [
+    "tradition"
+   ],
+   "fact": "Dusty wishbones hang over the bar. Legend says soldiers hung them before leaving for World War I, and the ones left belonged to men who never came back.",
+   "src": null
+  },
+  {
+   "name": "Katz's Delicatessen",
+   "tags": [
+    "tradition"
+   ],
+   "fact": "During World War II its slogan was \"Send a salami to your boy in the army,\" and it still ships salamis today.",
+   "src": null
+  }
+ ],
+ "new": [
+  {
+   "bbl": 1008220001,
+   "name": "Church of the Holy Communion",
+   "tags": [
+    "oncewas",
+    "history"
+   ],
+   "year": 1846,
+   "facts": [
+    "Consecrated in 1846 as an Episcopal church, designed by Richard Upjohn, who also designed Trinity Church.",
+    "In the 1980s it became the Limelight, one of the city's most famous nightclubs.",
+    "It has since been converted to shops and a gym."
+   ],
+   "src": "https://en.wikipedia.org/wiki/Church_of_the_Holy_Communion_and_Buildings"
+  },
+  {
+   "bbl": 1005107502,
+   "name": "Puck Building",
+   "tags": [
+    "oncewas",
+    "history"
+   ],
+   "year": 1886,
+   "facts": [
+    "Built in 1886 to print Puck, a popular humor magazine.",
+    "A gilded statue of the character Puck still stands over the entrance.",
+    "The old printing plant now holds offices, shops and penthouse homes added on the roof."
+   ],
+   "src": "https://en.wikipedia.org/wiki/Puck_Building"
+  },
+  {
+   "bbl": 1001970001,
+   "name": "Engine Company 31",
+   "tags": [
+    "oncewas",
+    "history"
+   ],
+   "year": 1895,
+   "facts": [
+    "Built in 1895 as a firehouse, designed to look like a French Renaissance chateau.",
+    "After the fire company moved out in the 1970s, it became home to the Downtown Community Television Center."
+   ],
+   "src": "https://en.wikipedia.org/wiki/Engine_Company_31"
+  },
+  {
+   "bbl": 1012840002,
+   "name": "Scribner Building",
+   "tags": [
+    "oncewas",
+    "written",
+    "history"
+   ],
+   "year": 1913,
+   "facts": [
+    "Built in 1913 as the headquarters and bookstore of Charles Scribner's Sons, the publisher of Hemingway and F. Scott Fitzgerald.",
+    "The bookstore closed in 1989. Its landmarked glass-and-iron storefront now holds other shops."
+   ],
+   "src": "https://en.wikipedia.org/wiki/Charles_Scribner%27s_Sons"
+  },
+  {
+   "bbl": 1007170071,
+   "name": "454 West 20th Street",
+   "tags": [
+    "written"
+   ],
+   "year": 0,
+   "facts": [
+    "In April 1951 Jack Kerouac typed the first full draft of On the Road here, on one long roll of paper, in about three weeks."
+   ],
+   "src": "https://en.wikipedia.org/wiki/On_the_Road"
+  },
+  {
+   "bbl": 1006190051,
+   "name": "337 Bleecker Street",
+   "tags": [
+    "written"
+   ],
+   "year": 0,
+   "facts": [
+    "Lorraine Hansberry wrote A Raisin in the Sun while living here in the 1950s."
+   ],
+   "src": "https://en.wikipedia.org/wiki/Lorraine_Hansberry"
+  },
+  {
+   "lat": 40.75775,
+   "lng": -73.9687,
+   "name": "53rd & 3rd",
+   "tags": [
+    "song"
+   ],
+   "year": 0,
+   "facts": [
+    "The Ramones named their 1976 song \"53rd & 3rd\" for this intersection."
+   ],
+   "src": "https://en.wikipedia.org/wiki/53rd_%26_3rd"
+  },
+  {
+   "lat": 40.7596,
+   "lng": -73.9603,
+   "name": "Queensboro Bridge",
+   "tags": [
+    "song",
+    "history"
+   ],
+   "year": 1909,
+   "facts": [
+    "It opened in 1909 and is also known as the 59th Street Bridge.",
+    "Simon & Garfunkel named \"The 59th Street Bridge Song (Feelin' Groovy)\" for it in 1966."
+   ],
+   "src": "https://en.wikipedia.org/wiki/The_59th_Street_Bridge_Song_(Feelin%27_Groovy)"
+  }
+ ]
+}
