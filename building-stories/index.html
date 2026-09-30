@@ -243,7 +243,7 @@ const ERAS = [
 ];
 const eraOf = y => ERAS.findIndex(e => e.test(y));
 const show = ERAS.map(()=>true);
-const TAGS=[["lore","Ghosts & legends"],["film","On screen"],["residents","Famous neighbors"],["history","History was here"]];
+const TAGS=[["lore","Ghosts & legends"],["film","On screen"],["residents","Famous neighbors"],["history","History was here"],["oncewas","Once was"],["song","Song lines"],["written","Written here"],["tradition","Odd bylaws & traditions"]];
 // Stamp filter: nothing chosen = every stamp shows; choosing types narrows the map to those stories.
 const storyOn=st=>FILT.tags.size===0||st.tags.some(t=>FILT.tags.has(t));
 const storyVisible=st=>storyOn(st)&&(!filtersActive||(st.i==null?FILT.tags.size>0&&onlyTags():MATCH[st.i]));
@@ -644,7 +644,7 @@ const NUMW=["zero","one","two","three","four","five","six","seven","eight","nine
 const plural=(n,w)=>n===1?w:/(s|sh|ch|x)$/.test(w)?w+"es":w+"s";
 const cap=t=>t.charAt(0).toUpperCase()+t.slice(1);
 const PROPER=/^(London|Japanese|American|Callery|Amur|Norway|Chinese|Kentucky|Siberian|English|Turkish|European|Persian|Ohio|Kwanzan|Freeman|Sargent|Osage|Yoshino|Korean|Eastern|Oriental|Carolina|Crimean|Himalayan|Dawn|Austrian|Scots|Colorado|Amur|Sawtooth|Okame|Higan|Kousa)$/;
-function treeName(n){ const w=n.trim().split(/\s+/); if(!PROPER.test(w[0])) w[0]=w[0].toLowerCase(); return w.join(" "); }
+function treeName(n){ n=n.replace(/['‘’"“”][^'‘’"“”]*['‘’"“”]\s*/g,"").replace(/\s+/g," ").trim()||n; const w=n.trim().split(/\s+/); if(!PROPER.test(w[0])) w[0]=w[0].toLowerCase(); return w.join(" "); }
 function treeHTML(i){
   if(!TREES_OF) return ""; const list=TREES_OF[i]; if(!list||!list.length) return "";
   const c=new Map(); let big=-1;
@@ -653,7 +653,7 @@ function treeHTML(i){
   const shown=parts.slice(0,3), more=list.length-[...c].sort((a,b)=>b[1]-a[1]).slice(0,3).reduce((s,x)=>s+x[1],0);
   let line=shown.length===1?shown[0]:shown.slice(0,-1).join(", ")+(shown.length>2?",":"")+" and "+shown.at(-1);
   if(more>0) line+=`, plus ${more<NUMW.length?NUMW[more]:more} more`;
-  const bigLine=TREES.d[big]>=6?` The biggest is a ${treeName(TREES.species[TREES.s[big]])} with a trunk about ${TREES.d[big]} inches across.`:"";
+  const bigLine=TREES.d[big]>=6?` The biggest is ${/^[aeiou]/i.test(treeName(TREES.species[TREES.s[big]]))?"an":"a"} ${treeName(TREES.species[TREES.s[big]])} with a trunk about ${TREES.d[big]} inches across.`:"";
   return `<div class="amenity tree"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-6m0 0-3-2.5M12 15l3.5-3M12 3a6 6 0 0 0-5.8 7.5A4.5 4.5 0 0 0 8 19h8a4.5 4.5 0 0 0 1.8-8.5A6 6 0 0 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
     <div><b>Out front: ${esc(cap(line))}</b><span>Street trees along this building's stretch of curb, from the city's tree inventory.${bigLine}</span></div></div>`;
 }
@@ -676,7 +676,7 @@ function zoneHTML(i){
 }
 function storyHTML(st){
   return `<div class="story"><h3>The story</h3>
-    <div class="tags">${st.tags.map(t=>`<span class="tag">${esc({history:"History",film:"On screen",lore:"Lore",residents:"Famous residents"}[t]||t)}</span>`).join("")}</div>
+    <div class="tags">${st.tags.map(t=>`<span class="tag">${esc({history:"History",film:"On screen",lore:"Lore",residents:"Famous residents",oncewas:"Once was",song:"Song lines",written:"Written here",tradition:"Traditions"}[t]||t)}</span>`).join("")}</div>
     <ul class="facts">${st.facts.map(t=>`<li>${esc(t)}</li>`).join("")}</ul>
     ${st.news&&st.news.length?`<p class="section-label" style="margin:4px 0 -4px">Recently</p><ul class="facts">${st.news.map(n=>`<li>${esc(n.text)} <a class="src" href="${esc(n.source_url)}" target="_blank" rel="noopener">${esc(srcName(n.source_url))}</a></li>`).join("")}</ul>`:""}
     <div class="src">${(st.sources&&st.sources.length>1)?"Sources: "+[...new Set(st.sources)].map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(srcName(u))}</a>`).join(", "):`Source: <a href="${esc(st.src)}" target="_blank" rel="noopener">${esc(srcName(st.src))}</a>`}</div></div>`;
