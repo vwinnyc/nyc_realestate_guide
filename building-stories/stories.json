@@ -48,15 +48,33 @@
 "name": "Hotel Chelsea",
 "tags": [
 "residents",
-"history"
+"history",
+"oncewas",
+"song",
+"written",
+"tradition"
 ],
 "year": 1884,
 "facts": [
 "Opened in the 1880s as one of the city's early cooperative apartment houses, then became a hotel.",
 "Arthur C. Clarke worked on 2001: A Space Odyssey while living here.",
-"Leonard Cohen wrote \"Chelsea Hotel #2\" about it."
+"Leonard Cohen wrote \"Chelsea Hotel #2\" about it.",
+"Longtime manager Stanley Bard was known for accepting art from struggling artists in place of rent.",
+"In Room 829, Thomas Wolfe produced the manuscript for You Can’t Go Home Again.",
+"His editor published the novel posthumously in 1940.",
+"In May 1938, Wolfe drew inspiration by roaming the hallways; sweltering New York heat made him say he could smell seven million inhabitants, and he used a Purdue speaking invitation as an excuse to leave."
 ],
-"src": "https://en.wikipedia.org/wiki/Hotel_Chelsea"
+"src": "https://en.wikipedia.org/wiki/Hotel_Chelsea",
+"checked": "2026-10-01",
+"sources": [
+"https://en.wikipedia.org/wiki/Hotel_Chelsea",
+"https://en.wikipedia.org/wiki/Hotel_Chelsea",
+"https://en.wikipedia.org/wiki/Hotel_Chelsea",
+"https://en.wikipedia.org/wiki/Hotel_Chelsea",
+"https://blogs.lib.unc.edu/ncm/2017/02/15/31633",
+"https://historicsites.nc.gov/all-sites/thomas-wolfe-memorial/history/biography-thomas-wolfe",
+"https://blogs.lib.unc.edu/ncm/2017/02/15/31633"
+]
 },
 {
 "bbl": 1008350041,
@@ -70,7 +88,22 @@
 "The top was designed as a mooring mast for airships. It never worked in practice.",
 "It has its own ZIP code: 10118."
 ],
-"src": "https://en.wikipedia.org/wiki/Empire_State_Building"
+"src": "https://en.wikipedia.org/wiki/Empire_State_Building",
+"checked": "2026-10-01",
+"news": [
+{
+"text": "On Sept. 8, the Empire State Building Observation Deck opened a free field-trip request program for NYC public and charter schools, with visits for groups of up to 50 guests.",
+"source_url": "https://investors.esrtreit.com/news/Press-Releases/news-details/2026/Empire-State-Building-Observation-Deck-Opens-Skyline-to-NYC-Students-with-Complimentary-Visit-Program/default.aspx"
+},
+{
+"text": "In July, the building announced its 48th annual Run-Up for Oct. 6: 225 runners would climb 1,576 stairs to the 86th-floor Observation Deck.",
+"source_url": "https://www.esbnyc.com/node/3121"
+},
+{
+"text": "After a sold-out first event, the building announced four themed silent-disco nights on the 86th-floor deck from Sept. 19 to Oct. 17, with wireless LED headphones, a live DJ, and nighttime skyline views.",
+"source_url": "https://www.esbnyc.com/node/3271"
+}
+]
 },
 {
 "bbl": 1012970023,
@@ -83,13 +116,21 @@
 "Architect William Van Alen had the spire assembled secretly inside the tower, then hoisted it into place to claim the title of world's tallest building.",
 "The steel eagles and radiator-cap ornaments nod to Chrysler cars."
 ],
-"src": "https://en.wikipedia.org/wiki/Chrysler_Building"
+"src": "https://en.wikipedia.org/wiki/Chrysler_Building",
+"checked": "2026-10-01",
+"news": [
+{
+"text": "On September 22, police closed streets near the Chrysler Building after an NYPD canine detected something inside an unattended suitcase; they evacuated a nearby building and cleared the package about 90 minutes later.",
+"source_url": "https://www.nbcnewyork.com/manhattan/suspicious-package-sidewalk-united-nations/6550813/"
+}
+]
 },
 {
 "bbl": 1001237501,
 "name": "Woolworth Building",
 "tags": [
-"history"
+"history",
+"oncewas"
 ],
 "year": 1913,
 "facts": [
@@ -97,7 +138,8 @@
 "F. W. Woolworth reportedly paid for it in cash.",
 "It was the world's tallest building until 1930. Its upper floors are now condos."
 ],
-"src": "https://en.wikipedia.org/wiki/Woolworth_Building"
+"src": "https://en.wikipedia.org/wiki/Woolworth_Building",
+"checked": "2026-10-01"
 },
 {
 "bbl": 1012800001,
@@ -112,7 +154,18 @@
 "Restorers left one small dark patch on the ceiling uncleaned to show how grimy it had become.",
 "Two people whispering into opposite corners of the arches near the Oyster Bar can hear each other."
 ],
-"src": "https://en.wikipedia.org/wiki/Grand_Central_Terminal"
+"src": "https://en.wikipedia.org/wiki/Grand_Central_Terminal",
+"checked": "2026-10-01",
+"news": [
+{
+"text": "For two days in August, Vanderbilt Hall hosted “What Grows Here,” a free installation where visitors added their own stories to a living field of wheat.",
+"source_url": "https://grandcentralterminal.com/event/what-grows-here"
+},
+{
+"text": "Grand Central planned a 250-seat Osteria Centrale and Mercato Centrale in a former Rite Aid space, plus a grab-and-go counter carved from a 95-square-foot elevator shaft.",
+"source_url": "https://www.nypost.com/2026/08/10/business/new-fine-dining-grab-and-go-options-coming-to-grand-central-terminal-as-mta-faces-budget-shortfalls/"
+}
+]
 },
 {
 "bbl": 1008750069,
@@ -127,7 +180,18 @@
 "Booth was the brother of John Wilkes Booth, Lincoln's assassin.",
 "Stanford White remodeled the house for the club."
 ],
-"src": "https://en.wikipedia.org/wiki/The_Players_(club)"
+"src": "https://en.wikipedia.org/wiki/The_Players_(club)",
+"checked": "2026-10-01",
+"news": [
+{
+"text": "In August, The Players promoted guided tours of its landmark clubhouse, featuring Edwin Booth’s conserved bedroom suite, the pool room where Mark Twain played, and 18th-century stage props and costumes.",
+"source_url": "https://theplayersnyc.org/docent-tours"
+},
+{
+"text": "The Players was set to open its clubhouse to the public for one night on September 24 for For the Record 2026, a battle of bands benefiting music education.",
+"source_url": "https://www.bethelwoodscenter.org/for-the-record"
+}
+]
 },
 {
 "bbl": 1008760018,
@@ -140,7 +204,8 @@
 "Completed in 1883, it's one of the oldest cooperative apartment buildings still standing in New York.",
 "Its residents are among those who can hold a key to Gramercy Park."
 ],
-"src": "https://en.wikipedia.org/wiki/Gramercy_Park"
+"src": "https://en.wikipedia.org/wiki/Gramercy_Park",
+"checked": "2026-10-01"
 },
 {
 "lat": 40.73805,
@@ -148,15 +213,34 @@
 "name": "Gramercy Park",
 "tags": [
 "history",
-"lore"
+"lore",
+"tradition"
 ],
 "year": 1831,
 "facts": [
 "Samuel Ruggles laid out the park in 1831 and sold the lots around it with park access attached.",
 "It's still private. Only residents of the surrounding lots can get a key, and the locks are changed regularly.",
-"It is one of only two private parks in New York City."
+"It is one of only two private parks in New York City.",
+"The gates traditionally open to the public for carolers on Christmas Eve, one of the few times outsiders can step inside."
 ],
-"src": "https://en.wikipedia.org/wiki/Gramercy_Park"
+"src": "https://en.wikipedia.org/wiki/Gramercy_Park",
+"checked": "2026-10-01",
+"news": [
+{
+"text": "On July 13, a judge sided with the Gramercy Park Hotel in its rooftop dispute with a neighboring co-op and lifted a halt on hotel construction.",
+"source_url": "https://www.crainsnewyork.com/real-estate/commercial/cny-judge-sides-gramercy-park-hotel-rooftop-dispute-20260713"
+},
+{
+"text": "By August 24, union crews were restoring the hotel’s interior, installing floor coverings, acoustical ceilings and interior systems across multiple floors.",
+"source_url": "https://ccametro.com/a-new-chapter-for-the-gramercy-park-hotel/"
+}
+],
+"sources": [
+"https://en.wikipedia.org/wiki/Gramercy_Park",
+"https://en.wikipedia.org/wiki/Gramercy_Park",
+"https://en.wikipedia.org/wiki/Gramercy_Park",
+"https://en.wikipedia.org/wiki/Gramercy_Park"
+]
 },
 {
 "bbl": 1011657503,
@@ -170,20 +254,37 @@
 "Its developer, W. E. D. Stokes, kept a small farm on the roof with chickens, ducks and goats, and sold fresh eggs to tenants.",
 "Babe Ruth lived here."
 ],
-"src": "https://en.wikipedia.org/wiki/The_Ansonia"
+"src": "https://en.wikipedia.org/wiki/The_Ansonia",
+"checked": "2026-10-01",
+"news": [
+{
+"text": "A September 25, 2026 report noted that *American Horror Story: 13* modeled its fictional Apollyon apartment building on The Ansonia’s facade.",
+"source_url": "https://thecinemaholic.com/ahs-13-apollyon/"
+}
+]
 },
 {
 "bbl": 1005840030,
 "name": "75½ Bedford Street",
 "tags": [
-"residents"
+"residents",
+"written"
 ],
 "year": 1873,
 "facts": [
 "Often called the narrowest house in New York, at about 9½ feet wide.",
-"The poet Edna St. Vincent Millay lived here in the 1920s."
+"The poet Edna St. Vincent Millay lived here in the 1920s.",
+"Edna St. Vincent Millay wrote “The Ballad of the Harp-Weaver” in Europe in 1922, not at 75½ Bedford Street; the house plaque wrongly says otherwise.",
+"The house’s literary charm is its studio: a 1923 renovation added a skylight and turned the top floor into a studio for Millay."
 ],
-"src": "https://en.wikipedia.org/wiki/75%C2%BD_Bedford_Street"
+"src": "https://en.wikipedia.org/wiki/75%C2%BD_Bedford_Street",
+"checked": "2026-10-01",
+"sources": [
+"https://en.wikipedia.org/wiki/75%C2%BD_Bedford_Street",
+"https://en.wikipedia.org/wiki/75%C2%BD_Bedford_Street",
+"https://www.nyclgbtsites.org/site/edna-st-vincent-millay-residence",
+"https://en.wikipedia.org/wiki/75%C2%BD_Bedford_Street"
+]
 },
 {
 "bbl": 1021090106,
@@ -283,7 +384,8 @@
 "bbl": 1018840001,
 "name": "Tom's Restaurant",
 "tags": [
-"film"
+"film",
+"song"
 ],
 "year": 1904,
 "facts": [
@@ -377,14 +479,21 @@
 "name": "Katz's Delicatessen",
 "tags": [
 "film",
-"history"
+"history",
+"tradition"
 ],
 "year": 1888,
 "facts": [
 "Katz's traces its founding to 1888.",
-"The famous diner scene in When Harry Met Sally (1989) was filmed here. A sign marks the table."
+"The famous diner scene in When Harry Met Sally (1989) was filmed here. A sign marks the table.",
+"During World War II its slogan was \"Send a salami to your boy in the army,\" and it still ships salamis today."
 ],
-"src": "https://en.wikipedia.org/wiki/Katz%27s_Delicatessen"
+"src": "https://en.wikipedia.org/wiki/Katz%27s_Delicatessen",
+"sources": [
+"https://en.wikipedia.org/wiki/Katz%27s_Delicatessen",
+"https://en.wikipedia.org/wiki/Katz%27s_Delicatessen",
+"https://en.wikipedia.org/wiki/Katz%27s_Delicatessen"
+]
 },
 {
 "bbl": 1000490001,
@@ -554,7 +663,8 @@
 "bbl": 1004140056,
 "name": "Tenement Museum",
 "tags": [
-"history"
+"history",
+"oncewas"
 ],
 "year": 1863,
 "facts": [
@@ -594,15 +704,23 @@
 "name": "McSorley's Old Ale House",
 "tags": [
 "history",
-"lore"
+"lore",
+"tradition"
 ],
 "year": 0,
 "facts": [
 "It claims to date to 1854, which would make it one of the city's oldest bars.",
 "Women weren't allowed in until a 1970 court ruling.",
-"It serves just two kinds of beer: light and dark."
+"It serves just two kinds of beer: light and dark.",
+"Dusty wishbones hang over the bar. Legend says soldiers hung them before leaving for World War I, and the ones left belonged to men who never came back."
 ],
-"src": "https://en.wikipedia.org/wiki/McSorley%27s_Old_Ale_House"
+"src": "https://en.wikipedia.org/wiki/McSorley%27s_Old_Ale_House",
+"sources": [
+"https://en.wikipedia.org/wiki/McSorley%27s_Old_Ale_House",
+"https://en.wikipedia.org/wiki/McSorley%27s_Old_Ale_House",
+"https://en.wikipedia.org/wiki/McSorley%27s_Old_Ale_House",
+"https://en.wikipedia.org/wiki/McSorley%27s_Old_Ale_House"
+]
 },
 {
 "bbl": 1004660026,
@@ -636,7 +754,8 @@
 "bbl": 1004350012,
 "name": "Physical Graffiti buildings",
 "tags": [
-"film"
+"film",
+"song"
 ],
 "year": 0,
 "facts": [
@@ -664,7 +783,8 @@
 "lng": -73.99906,
 "name": "Jefferson Market Library",
 "tags": [
-"history"
+"history",
+"oncewas"
 ],
 "year": 1877,
 "facts": [
@@ -748,7 +868,8 @@
 "name": "Chelsea Market",
 "tags": [
 "history",
-"lore"
+"lore",
+"oncewas"
 ],
 "year": 0,
 "facts": [
@@ -803,7 +924,8 @@
 "name": "Pete's Tavern",
 "tags": [
 "residents",
-"lore"
+"lore",
+"written"
 ],
 "year": 0,
 "facts": [
@@ -844,28 +966,43 @@
 "name": "Algonquin Hotel",
 "tags": [
 "residents",
-"lore"
+"lore",
+"written",
+"tradition"
 ],
 "year": 1902,
 "facts": [
 "Dorothy Parker and friends met for lunch here in the 1920s as the Algonquin Round Table.",
-"The hotel has kept a resident cat for decades. The males are named Hamlet and the females Matilda."
+"The hotel has kept a resident cat for decades. The males are named Hamlet and the females Matilda.",
+"E. B. White wrote his 1948 essay Here Is New York while staying at the hotel."
 ],
-"src": "https://en.wikipedia.org/wiki/Algonquin_Hotel"
+"src": "https://en.wikipedia.org/wiki/Algonquin_Hotel",
+"sources": [
+"https://en.wikipedia.org/wiki/Algonquin_Hotel",
+"https://en.wikipedia.org/wiki/Algonquin_Hotel",
+"https://en.wikipedia.org/wiki/Here_Is_New_York"
+]
 },
 {
 "bbl": 1012650040,
 "name": "30 Rockefeller Plaza",
 "tags": [
 "history",
-"film"
+"film",
+"tradition"
 ],
 "year": 1933,
 "facts": [
 "The famous 1932 photo Lunch atop a Skyscraper shows ironworkers on a beam during its construction.",
-"NBC's studios here are home to Saturday Night Live."
+"NBC's studios here are home to Saturday Night Live.",
+"Construction workers put up the first Christmas tree here in 1931. The official tree lighting began in 1933."
 ],
-"src": "https://en.wikipedia.org/wiki/30_Rockefeller_Plaza"
+"src": "https://en.wikipedia.org/wiki/30_Rockefeller_Plaza",
+"sources": [
+"https://en.wikipedia.org/wiki/30_Rockefeller_Plaza",
+"https://en.wikipedia.org/wiki/30_Rockefeller_Plaza",
+"https://en.wikipedia.org/wiki/Rockefeller_Center_Christmas_Tree"
+]
 },
 {
 "bbl": 1010090001,
@@ -899,14 +1036,21 @@
 "name": "Macy's Herald Square",
 "tags": [
 "film",
-"history"
+"history",
+"tradition"
 ],
 "year": 1902,
 "facts": [
 "Setting of the film Miracle on 34th Street (1947).",
-"The store's wooden escalators, some of the first of their kind, are still running."
+"The store's wooden escalators, some of the first of their kind, are still running.",
+"The Macy's Thanksgiving Day Parade, first held in 1924, ends in front of the store."
 ],
-"src": "https://en.wikipedia.org/wiki/Macy%27s_Herald_Square"
+"src": "https://en.wikipedia.org/wiki/Macy%27s_Herald_Square",
+"sources": [
+"https://en.wikipedia.org/wiki/Macy%27s_Herald_Square",
+"https://en.wikipedia.org/wiki/Macy%27s_Herald_Square",
+"https://en.wikipedia.org/wiki/Macy%27s_Thanksgiving_Day_Parade"
+]
 },
 {
 "lat": 40.74932,
@@ -969,7 +1113,8 @@
 "bbl": 1010150049,
 "name": "Sardi's",
 "tags": [
-"history"
+"history",
+"tradition"
 ],
 "year": 0,
 "facts": [
@@ -1008,7 +1153,8 @@
 "bbl": 1011270029,
 "name": "The San Remo",
 "tags": [
-"residents"
+"residents",
+"tradition"
 ],
 "year": 1930,
 "facts": [
@@ -1103,7 +1249,8 @@
 "name": "Gracie Mansion",
 "tags": [
 "history",
-"residents"
+"residents",
+"oncewas"
 ],
 "year": 1799,
 "facts": [
@@ -1116,7 +1263,8 @@
 "bbl": 1013850001,
 "name": "The Frick",
 "tags": [
-"residents"
+"residents",
+"oncewas"
 ],
 "year": 1914,
 "facts": [
@@ -1130,7 +1278,8 @@
 "name": "Carnegie Mansion",
 "tags": [
 "residents",
-"history"
+"history",
+"oncewas"
 ],
 "year": 1902,
 "facts": [
@@ -1144,7 +1293,8 @@
 "lng": -73.95971,
 "name": "Mount Vernon Hotel Museum",
 "tags": [
-"history"
+"history",
+"oncewas"
 ],
 "year": 1799,
 "facts": [
@@ -1158,7 +1308,8 @@
 "name": "Apollo Theater",
 "tags": [
 "history",
-"lore"
+"lore",
+"tradition"
 ],
 "year": 1914,
 "facts": [
@@ -1172,14 +1323,21 @@
 "name": "Hotel Theresa",
 "tags": [
 "residents",
-"history"
+"history",
+"oncewas"
 ],
 "year": 1913,
 "facts": [
 "Called the Waldorf of Harlem.",
-"Fidel Castro stayed here during his 1960 visit to the United Nations, and Nikita Khrushchev came to meet him."
+"Fidel Castro stayed here during his 1960 visit to the United Nations, and Nikita Khrushchev came to meet him.",
+"It stopped operating as a hotel in the 1960s and was converted to offices."
 ],
-"src": "https://en.wikipedia.org/wiki/Hotel_Theresa"
+"src": "https://en.wikipedia.org/wiki/Hotel_Theresa",
+"sources": [
+"https://en.wikipedia.org/wiki/Hotel_Theresa",
+"https://en.wikipedia.org/wiki/Hotel_Theresa",
+"https://en.wikipedia.org/wiki/Hotel_Theresa"
+]
 },
 {
 "lat": 40.82146,
@@ -1213,13 +1371,23 @@
 "bbl": 1017510064,
 "name": "Langston Hughes House",
 "tags": [
-"residents"
+"residents",
+"written"
 ],
 "year": 1869,
 "facts": [
-"The poet Langston Hughes lived and worked on the top floor for the last 20 years of his life."
+"The poet Langston Hughes lived and worked on the top floor for the last 20 years of his life.",
+"Langston Hughes wrote *Montage of a Dream Deferred* (1951) from his private study on the house’s third floor.",
+"Langston Hughes lived and worked on the rowhouse’s top floor from 1947 to 1967; works he wrote there include *Montage of a Dream Deferred* (1951) and *I Wonder as I Wander* (1956).",
+"A charming detail: Hughes once said, “I would rather have a kitchenette in Harlem than a mansion in Westchester.”"
 ],
-"src": "https://en.wikipedia.org/wiki/Langston_Hughes_House"
+"src": "https://en.wikipedia.org/wiki/Langston_Hughes_House",
+"sources": [
+"https://en.wikipedia.org/wiki/Langston_Hughes_House",
+"https://savingplaces.org/stories/restoring-langston-hughes-house-harlem",
+"https://www.nyclgbtsites.org/site/langston-hughes-residence",
+"https://www.nytimes.com/2026/03/19/realestate/langston-hughes-harlem-house-restoration.html"
+]
 },
 {
 "bbl": 1021450001,
@@ -1372,5 +1540,473 @@
 "added": "2026-09-29",
 "checked": "2026-09-29",
 "by": "parallel"
+},
+{
+"bbl": 1014560012,
+"name": "Mount Vernon Hotel Museum & Garden",
+"tags": [
+"history",
+"oncewas",
+"lore",
+"written"
+],
+"year": 1799,
+"facts": [
+"Col. William Stephens Smith, a former George Washington aide, named the estate for Washington’s Virginia home; financial difficulties led people to dub it “Smith’s Folly.”",
+"It was one of about 50 day hotels around New York, where visitors escaped downtown for music, dancing, games, carriage rides and hearty meals; today it is the only historic site interpreting them.",
+"A New York Tribune article in the museum’s archives reported an unidentified skeleton under the 1799 carriage house’s floorboards, leaving its identity a mystery."
+],
+"sources": [
+"https://mvhm.org/museum-history/",
+"https://mvhm.org/step-back-in-time/",
+"https://www.timeout.com/newyork/things-to-do/halloween-murder-mystery"
+],
+"src": "https://mvhm.org/museum-history/",
+"added": "2026-10-01",
+"checked": "2026-10-01",
+"by": "parallel"
+},
+{
+"bbl": 1000530041,
+"name": "94 Greenwich Street House",
+"tags": [
+"history",
+"residents",
+"oncewas"
+],
+"year": 1800,
+"facts": [
+"Owner Augustine Hicks Lawrence signed the 1792 Buttonwood Agreement, one of 24 men who established the New York Stock and Exchange Board, predecessor to the New York Stock Exchange.",
+"By 1850, directories listed the Union Hotel here alongside a porterhouse; the proprietor, his wife, daughter, and twelve other residents lived in the building.",
+"The house gained a full story before 1858, yet its original gambrel roof outline remains visible on the Rector Street facade."
+],
+"sources": [
+"https://s-media.nyc.gov/agencies/lpc/lp/2218.pdf",
+"https://s-media.nyc.gov/agencies/lpc/lp/2218.pdf",
+"https://s-media.nyc.gov/agencies/lpc/lp/2218.pdf"
+],
+"src": "https://s-media.nyc.gov/agencies/lpc/lp/2218.pdf",
+"added": "2026-10-01",
+"checked": "2026-10-01",
+"by": "parallel"
+},
+{
+"bbl": 1001420010,
+"name": "Jonas Wood House",
+"tags": [
+"history",
+"residents"
+],
+"year": 1804,
+"facts": [
+"Jonas Wood bought the lot from Trinity in 1795 for $395, and an 1804 city directory listed him at the address, indicating construction in 1803, 04.",
+"A preservation project moved the former 314 Washington Street house to Harrison Street in 1975; critic Paul Goldberger later mocked the recreated facades, saying Disneyland’s looked more real.",
+"The LPC found that the house retains its original roof, dormers, and cornice, with nearly all surviving early-19th-century detail above the altered first floor."
+],
+"sources": [
+"https://s-media.nyc.gov/agencies/lpc/lp/0553.pdf",
+"https://www.nytimes.com/2001/11/04/realestate/streetscapes-25-to-41-harrison-street-a-historic-renovation-improving-with-age.html",
+"https://s-media.nyc.gov/agencies/lpc/lp/0553.pdf"
+],
+"src": "https://s-media.nyc.gov/agencies/lpc/lp/0553.pdf",
+"added": "2026-10-01",
+"checked": "2026-10-01",
+"by": "parallel"
+},
+{
+"bbl": 1004650029,
+"name": "Stuyvesant-Fish House",
+"tags": [
+"history",
+"residents"
+],
+"year": 1804,
+"facts": [
+"Nicholas Fish hosted General Lafayette at the house on September 10, 1824, during Lafayette’s celebrated return to America, fifty years after the Revolutionary War.",
+"Hamilton Fish was born in the house in 1808 and later served as New York governor, U.S. senator, and secretary of state for eight years.",
+"At 18, Nicholas Fish became a major, and the designation report identifies him as possibly the youngest major in U.S. Army history; he also served as an executor of Alexander Hamilton’s estate."
+],
+"sources": [
+"https://media.villagepreservation.org/wp-content/uploads/2020/03/15122819/Stuyvesant-Fish-House-NYC-LPC-Designation-Report.pdf",
+"https://media.villagepreservation.org/wp-content/uploads/2020/03/15122819/Stuyvesant-Fish-House-NYC-LPC-Designation-Report.pdf",
+"https://media.villagepreservation.org/wp-content/uploads/2020/03/15122819/Stuyvesant-Fish-House-NYC-LPC-Designation-Report.pdf"
+],
+"src": "https://media.villagepreservation.org/wp-content/uploads/2020/03/15122819/Stuyvesant-Fish-House-NYC-LPC-Designation-Report.pdf",
+"added": "2026-10-01",
+"checked": "2026-10-01",
+"by": "parallel"
+},
+{
+"bbl": 1001910013,
+"name": "2 White Street House",
+"tags": [
+"history",
+"residents",
+"oncewas"
+],
+"year": 1809,
+"facts": [
+"Gideon Tucker built the house in 1809 in an old-fashioned Dutch style, even as Federal-style homes rose elsewhere; its original gambrel roof and dormers survive.",
+"Rev. Theodore S. Wright, a prominent Black abolitionist minister, lived here from 1842 until his death in 1847; the house may have served as a stop on the Underground Railroad.",
+"Around the Civil War, the basement reportedly housed a dance hall called “Shadow City,” a surprising chapter in the little house’s changing uses."
+],
+"sources": [
+"https://tribecacitizen.com/the-history-of-tribeca-buildings/the-history-of-2-white/",
+"https://www.nytimes.com/2022/08/28/realestate/streetscapes-tribeca-abolition.html",
+"https://tribecacitizen.com/the-history-of-tribeca-buildings/the-history-of-2-white/"
+],
+"src": "https://tribecacitizen.com/the-history-of-tribeca-buildings/the-history-of-2-white/",
+"added": "2026-10-01",
+"checked": "2026-10-01",
+"by": "parallel"
+},
+{
+"bbl": 1000530003,
+"name": "Former St. George’s Syrian Catholic Church",
+"tags": [
+"history",
+"oncewas"
+],
+"year": 1812,
+"facts": [
+"A 1859 newspaper described 103 Washington Street as a German dance-house. Sailor-oriented dance halls sometimes doubled as places where women arranged sex work while waltzing.",
+"The former church is Little Syria’s most significant surviving remnant, recalling Washington Street’s role as the “Mother Colony” for Syrian immigrant communities across America.",
+"Lebanese-American draftsman Harvey F. Cassab designed the church’s 1929, 30 Neo-Gothic façade in bright white terra cotta. Its colorful relief shows St. George slaying a green dragon."
+],
+"sources": [
+"https://s-media.nyc.gov/agencies/lpc/lp/2167.pdf",
+"https://s-media.nyc.gov/agencies/lpc/lp/2167.pdf",
+"https://s-media.nyc.gov/agencies/lpc/lp/2167.pdf"
+],
+"src": "https://s-media.nyc.gov/agencies/lpc/lp/2167.pdf",
+"added": "2026-10-01",
+"checked": "2026-10-01",
+"by": "parallel"
+},
+{
+"bbl": 1004890002,
+"name": "57 Sullivan Street House",
+"tags": [
+"history",
+"residents",
+"oncewas"
+],
+"year": 1816,
+"facts": [
+"Frederick Youmans, a carter, built the house as a speculative venture between 1816 and 1817; his business supplied fill for public projects, and the Landmarks Commission identifies no architect.",
+"The Knickerbocker, a basement bar run by African-American bartender Charles Woodbeck, served a multiracial clientele. In 1875, four customers were arrested for robbery and assault; one, Isaac Hatch, had been acquitted of murdering a policeman.",
+"A 1827 sale ad called the two-story house “nearly new” and listed a brick cistern, a yard in good order, and a billiard table, a charming glimpse of its early domestic life."
+],
+"sources": [
+"https://media.villagepreservation.org/wp-content/uploads/2020/03/15122433/57-Sullivan-NYC-designation-report.pdf",
+"https://media.villagepreservation.org/wp-content/uploads/2020/03/15122433/57-Sullivan-NYC-designation-report.pdf",
+"https://media.villagepreservation.org/wp-content/uploads/2020/03/15122433/57-Sullivan-NYC-designation-report.pdf"
+],
+"src": "https://media.villagepreservation.org/wp-content/uploads/2020/03/15122433/57-Sullivan-NYC-designation-report.pdf",
+"added": "2026-10-01",
+"checked": "2026-10-01",
+"by": "parallel"
+},
+{
+"bbl": 1002360021,
+"name": "Stephen Van Rensselaer House",
+"tags": [
+"history"
+],
+"year": 1816,
+"facts": [
+"The house stood at 153 Mulberry Street from its 1816 completion for Stephen Van Rensselaer until it shifted to No. 149 in 1841.",
+"When the city landmarked it in 1969, the house had one of Manhattan’s few remaining gambrel roofs.",
+"Its stoop preserves some original wrought-iron handrails, while cast-iron panels above the top step show wreaths, bows, and arrows."
+],
+"sources": [
+"https://s-media.nyc.gov/agencies/lpc/lp/0563.pdf",
+"https://s-media.nyc.gov/agencies/lpc/lp/0563.pdf",
+"https://s-media.nyc.gov/agencies/lpc/lp/0563.pdf"
+],
+"src": "https://s-media.nyc.gov/agencies/lpc/lp/0563.pdf",
+"added": "2026-10-01",
+"checked": "2026-10-01",
+"by": "parallel"
+},
+{
+"bbl": 1005950071,
+"name": "James Brown House",
+"tags": [
+"history",
+"lore",
+"oncewas",
+"written"
+],
+"year": 1817,
+"facts": [
+"During Prohibition, John Rolandi ran a restaurant at the front and a secret speakeasy at the back; upstairs rooms were frequently used as a brothel.",
+"Owners circumvented landmark façade rules by painting the edge of the neon “BAR” sign so it read “EAR,” also referencing the music journal Rip Hayman once ran upstairs.",
+"Local legend gives the Ear Inn a sailor ghost named Mickey; some versions say a car struck him outside, while others claim he died at his barstool."
+],
+"sources": [
+"https://citylore.org/places/ear-inn-in-the-james-brown-house/",
+"https://citylore.org/places/ear-inn-in-the-james-brown-house/",
+"https://www.timeout.com/newyork/news/five-hidden-secrets-of-nycs-iconic-bar-the-ear-inn-032024"
+],
+"src": "https://citylore.org/places/ear-inn-in-the-james-brown-house/",
+"added": "2026-10-01",
+"checked": "2026-10-01",
+"by": "parallel"
+},
+{
+"bbl": 1001420012,
+"name": "27A Harrison Street House",
+"tags": [
+"history",
+"lore",
+"oncewas"
+],
+"year": 1819,
+"facts": [
+"John McComb built 27A Harrison Street, then 315 Washington Street, in 1819. He was New York City’s first native-born architect and designed City Hall and Alexander Hamilton’s country house, The Grange.",
+"The lot occupies part of a 62-acre farm granted in 1636 to Annetje Jans and her first husband, both Scandinavian-born; Queen Anne gave the farm to Trinity Church in 1705.",
+"The house stood at 315 Washington Street until urban-renewal plans threatened its block; preservationists moved it to Harrison Street with two other Washington Street houses, then rebuilt their exteriors in 1975."
+],
+"sources": [
+"https://s-media.nyc.gov/agencies/lpc/lp/0551.pdf",
+"https://s-media.nyc.gov/agencies/lpc/lp/0551.pdf",
+"https://www.nytimes.com/2001/11/04/realestate/streetscapes-25-to-41-harrison-street-a-historic-renovation-improving-with-age.html"
+],
+"src": "https://s-media.nyc.gov/agencies/lpc/lp/0551.pdf",
+"added": "2026-10-01",
+"checked": "2026-10-01",
+"by": "parallel"
+},
+{
+"bbl": 1008220001,
+"name": "Church of the Holy Communion",
+"tags": [
+"oncewas",
+"history"
+],
+"year": 1846,
+"facts": [
+"Consecrated in 1846 as an Episcopal church, designed by Richard Upjohn, who also designed Trinity Church.",
+"In the 1980s it became the Limelight, one of the city's most famous nightclubs.",
+"It has since been converted to shops and a gym."
+],
+"src": "https://en.wikipedia.org/wiki/Church_of_the_Holy_Communion_and_Buildings",
+"added": "2026-10-01",
+"by": "seed"
+},
+{
+"bbl": 1005107502,
+"name": "Puck Building",
+"tags": [
+"oncewas",
+"history"
+],
+"year": 1886,
+"facts": [
+"Built in 1886 to print Puck, a popular humor magazine.",
+"A gilded statue of the character Puck still stands over the entrance.",
+"The old printing plant now holds offices, shops and penthouse homes added on the roof."
+],
+"src": "https://en.wikipedia.org/wiki/Puck_Building",
+"added": "2026-10-01",
+"by": "seed"
+},
+{
+"bbl": 1001970001,
+"name": "Engine Company 31",
+"tags": [
+"oncewas",
+"history"
+],
+"year": 1895,
+"facts": [
+"Built in 1895 as a firehouse, designed to look like a French Renaissance chateau.",
+"After the fire company moved out in the 1970s, it became home to the Downtown Community Television Center."
+],
+"src": "https://en.wikipedia.org/wiki/Engine_Company_31",
+"added": "2026-10-01",
+"by": "seed"
+},
+{
+"bbl": 1012840002,
+"name": "Scribner Building",
+"tags": [
+"oncewas",
+"written",
+"history"
+],
+"year": 1913,
+"facts": [
+"Built in 1913 as the headquarters and bookstore of Charles Scribner's Sons, the publisher of Hemingway and F. Scott Fitzgerald.",
+"The bookstore closed in 1989. Its landmarked glass-and-iron storefront now holds other shops."
+],
+"src": "https://en.wikipedia.org/wiki/Charles_Scribner%27s_Sons",
+"added": "2026-10-01",
+"by": "seed"
+},
+{
+"bbl": 1007170071,
+"name": "454 West 20th Street",
+"tags": [
+"written"
+],
+"year": 0,
+"facts": [
+"In April 1951 Jack Kerouac typed the first full draft of On the Road here, on one long roll of paper, in about three weeks.",
+"Jack Kerouac completed On the Road in April 1951 while living at 454 West 20th Street.",
+"Kerouac wrote it on a long roll of teletype paper."
+],
+"src": "https://en.wikipedia.org/wiki/On_the_Road",
+"added": "2026-10-01",
+"by": "seed",
+"sources": [
+"https://en.wikipedia.org/wiki/On_the_Road",
+"https://jackkerouac.com/pages/about",
+"https://www.nytimes.com/1997/11/30/nyregion/neighborhood-report-the-new-york-stroll-road-work-walking-where-kerouac-did.html"
+]
+},
+{
+"bbl": 1006190051,
+"name": "337 Bleecker Street",
+"tags": [
+"written"
+],
+"year": 0,
+"facts": [
+"Lorraine Hansberry wrote A Raisin in the Sun while living here in the 1950s."
+],
+"src": "https://en.wikipedia.org/wiki/Lorraine_Hansberry",
+"added": "2026-10-01",
+"by": "seed"
+},
+{
+"lat": 40.75775,
+"lng": -73.9687,
+"name": "53rd & 3rd",
+"tags": [
+"song"
+],
+"year": 0,
+"facts": [
+"The Ramones named their 1976 song \"53rd & 3rd\" for this intersection."
+],
+"src": "https://en.wikipedia.org/wiki/53rd_%26_3rd",
+"added": "2026-10-01",
+"by": "seed"
+},
+{
+"lat": 40.7596,
+"lng": -73.9603,
+"name": "Queensboro Bridge",
+"tags": [
+"song",
+"history"
+],
+"year": 1909,
+"facts": [
+"It opened in 1909 and is also known as the 59th Street Bridge.",
+"Simon & Garfunkel named \"The 59th Street Bridge Song (Feelin' Groovy)\" for it in 1966."
+],
+"src": "https://en.wikipedia.org/wiki/The_59th_Street_Bridge_Song_(Feelin%27_Groovy)",
+"added": "2026-10-01",
+"by": "seed"
+},
+{
+"name": "82 Washington Place",
+"tags": [
+"written"
+],
+"year": 1903,
+"facts": [
+"Richard Wright wrote his autobiography, Black Boy, here in 1945.",
+"The building’s tenants swap its windowsill plants for holiday wreaths."
+],
+"sources": [
+"https://www.hmdb.org/m.asp?m=106296",
+"https://amlit.commons.gc.cuny.edu/archives/739"
+],
+"src": "https://www.hmdb.org/m.asp?m=106296",
+"added": "2026-10-01",
+"by": "parallel",
+"bbl": 1005520010
+},
+{
+"name": "Pete’s Tavern",
+"tags": [
+"written"
+],
+"year": 0,
+"facts": [
+"Poets & Writers says O. Henry (William Sydney Porter) supposedly wrote “The Gift of the Magi” in Pete’s booth in 1905, while the tavern still bore the name Healy’s.",
+"Tavern lore places the writing in a booth adorned with photographs and a handwritten letter; the Smithsonian says no official documentation confirms O. Henry wrote it there."
+],
+"sources": [
+"https://www.pw.org/literary_places/petes_tavern",
+"https://www.smithsonianmag.com/history/history-o-henrys-gift-magi-180973840"
+],
+"src": "https://www.pw.org/literary_places/petes_tavern",
+"added": "2026-10-01",
+"by": "parallel",
+"bbl": 1008740023
+},
+{
+"name": "Allen Ginsberg & Peter Orlovsky Residence",
+"tags": [
+"written"
+],
+"year": 1909,
+"facts": [
+"Allen Ginsberg wrote most of “Kaddish” there in 1959, in memory of his mother.",
+"A January 1960 photograph shows Ginsberg at his apartment typewriter; another shows him with his Siamese cat."
+],
+"sources": [
+"https://www.nyclgbtsites.org/site/allen-ginsberg-peter-orlovsky-residence",
+"https://www.nyclgbtsites.org/site/allen-ginsberg-peter-orlovsky-residence"
+],
+"src": "https://www.nyclgbtsites.org/site/allen-ginsberg-peter-orlovsky-residence",
+"added": "2026-10-01",
+"by": "parallel",
+"bbl": 1003980053
+},
+{
+"name": "Emma Lazarus's former home",
+"tags": [
+"written"
+],
+"year": 1856,
+"facts": [
+"Emma Lazarus wrote “The New Colossus” at her home at 18 West 10th Street on November 2, 1883.",
+"Writer Constance Cory Harrison asked Lazarus to contribute verses to an exhibition and auction that would raise funds to complete the Statue of Liberty’s pedestal. Lazarus wrote the resulting sonnet from home."
+],
+"sources": [
+"https://villagepreservation.org/2023/11/02/emma-lazarus-and-the-poem-on-lady-libertys-pedestal/",
+"https://villagepreservation.org/2023/11/02/emma-lazarus-and-the-poem-on-lady-libertys-pedestal/"
+],
+"src": "https://villagepreservation.org/2023/11/02/emma-lazarus-and-the-poem-on-lady-libertys-pedestal/",
+"added": "2026-10-01",
+"by": "parallel",
+"bbl": 1005730033
+},
+{
+"name": "240 Central Park South Apartments",
+"tags": [
+"written"
+],
+"year": 1940,
+"facts": [
+"Britannica identifies Antoine de Saint-Exupéry as the writer of The Little Prince and says it appeared in English and French in April 1943.",
+"The New York State Literary Tree places Saint-Exupéry at 240 Central Park South while he wrote The Little Prince.",
+"Saint-Exupéry often wrote late at night with a cigarette and coffee or tea, and called friends at 2 a.m. to read pages aloud."
+],
+"sources": [
+"https://www.britannica.com/topic/The-Little-Prince",
+"https://nyslittree.org/locations/antoine-de-saint-exuperys-apartment",
+"https://www.themorgan.org/collection/little-prince"
+],
+"src": "https://www.britannica.com/topic/The-Little-Prince",
+"added": "2026-10-01",
+"by": "parallel",
+"bbl": 1010300058
 }
 ]
